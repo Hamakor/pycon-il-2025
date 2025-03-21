@@ -123,7 +123,7 @@ BRANDING_LINK = (
     'PyConIL.png',
 )
 EVENT_CTA_BUTTONS = (
-    ('https://cfp.pycon.org.il/', True,
+    ('https://cfp.pycon.org.il/', False,
      {'en': 'Propose Content', 'he': 'הגשת הצעות תוכן'}),
     ('mailto:sponsors@pycon.org.il?subject=Sponsorship', True,
      {'en': 'Become a Sponsor', 'he': 'יצירת קשר לחסויות'}),
