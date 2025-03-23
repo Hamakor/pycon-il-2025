@@ -1,5 +1,21 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>PyCon Israel 2025 - announcements</title><link href="https://pycon.org.il/2025/" rel="alternate"></link><link href="https://pycon.org.il/2025/feeds/announcements.atom.xml" rel="self"></link><id>https://pycon.org.il/2025/</id><updated>2024-11-05T13:45:00+02:00</updated><entry><title>PyCon Israel 2024 Videos Published</title><link href="https://pycon.org.il/2025/videos-published.html" rel="alternate"></link><published>2024-11-05T13:45:00+02:00</published><updated>2024-11-05T13:45:00+02:00</updated><author><name>PyCon Israel Team</name></author><id>tag:pycon.org.il,2024-11-05:/2025/videos-published.html</id><summary type="html">&lt;p&gt;The PyCon Israel 2024 videos are out&lt;/p&gt;</summary><content type="html">&lt;p&gt;PyCon Israel 2024 is proud to announce that the videos recorded at the
+<feed xmlns="http://www.w3.org/2005/Atom"><title>PyCon Israel 2025 - announcements</title><link href="https://pycon.org.il/2025/" rel="alternate"></link><link href="https://pycon.org.il/2025/feeds/announcements.atom.xml" rel="self"></link><id>https://pycon.org.il/2025/</id><updated>2025-03-23T23:00:00+02:00</updated><entry><title>Announcing PyCon Israel 2025</title><link href="https://pycon.org.il/2025/announce-pycon25.html" rel="alternate"></link><published>2025-03-23T23:00:00+02:00</published><updated>2025-03-23T23:00:00+02:00</updated><author><name>PyCon Israel Team</name></author><id>tag:pycon.org.il,2025-03-23:/2025/announce-pycon25.html</id><summary type="html">&lt;p&gt;Announcing PyCon Israel 2025&lt;/p&gt;</summary><content type="html">&lt;p&gt;📣 Exciting news for all Python lovers! 🐍🎉&lt;/p&gt;
+&lt;p&gt;PyCon Israel 2025 is officially happening on September 9th, 2025, at
+Cinema City, Gelilot!&lt;/p&gt;
+&lt;p&gt;Join us for an incredible gathering of Python developers, data
+scientists and tech enthusiasts. Expect inspiring talks, hands-on
+workshops, and fun acitivities! 🚀&lt;/p&gt;
+&lt;p&gt;🎤 The Call for Proposals is already open - visit our &lt;a href="https://pycon.org.il/2025/pages/cfp-resources.html"&gt;CFP
+Resources&lt;/a&gt; page
+for some inspiration, and see about
+&lt;a href="https://cfp.pycon.org.il/pycon-2025/cfp"&gt;submitting your talk&lt;/a&gt;!&lt;/p&gt;
+&lt;p&gt;🤝 Sponsorship opportunities are available! Want to showcase your
+brand to Israel's top Python community? Let's talk! Mail us at
+&lt;a href="mailto:sponsors@pycon.org.il"&gt;sponsors@pycon.org.il&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Stay updated by visiting us at &lt;a href="https://pycon.org.il"&gt;pycon.org.il&lt;/a&gt; ,
+following us on social networks, or &lt;a href="https://lists.hamakor.org.il/postorius/lists/news.pycon.org.il/"&gt;subscribing to our mailing
+list&lt;/a&gt;. We
+can't wait to see you there!&lt;/p&gt;</content><category term="announcements"></category></entry><entry><title>PyCon Israel 2024 Videos Published</title><link href="https://pycon.org.il/2025/videos-published.html" rel="alternate"></link><published>2024-11-05T13:45:00+02:00</published><updated>2024-11-05T13:45:00+02:00</updated><author><name>PyCon Israel Team</name></author><id>tag:pycon.org.il,2024-11-05:/2025/videos-published.html</id><summary type="html">&lt;p&gt;The PyCon Israel 2024 videos are out&lt;/p&gt;</summary><content type="html">&lt;p&gt;PyCon Israel 2024 is proud to announce that the videos recorded at the
 day of talks are finally available. It took a bit longer than we
 expected (and we take the full responsibility for that), but they're
 finally out.&lt;/p&gt;

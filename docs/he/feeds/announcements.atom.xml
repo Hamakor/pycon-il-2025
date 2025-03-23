@@ -1,5 +1,20 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>פייקון ישראל 2025 - announcements</title><link href="https://pycon.org.il/2025/he/" rel="alternate"></link><link href="https://pycon.org.il/2025/he/feeds/announcements.atom.xml" rel="self"></link><id>https://pycon.org.il/2025/he/</id><updated>2024-11-05T13:45:00+02:00</updated><entry><title>הקלטות הוידאו של פייקון ישראל 2024 פורסמו</title><link href="https://pycon.org.il/2025/he/videos-published.html" rel="alternate"></link><published>2024-11-05T13:45:00+02:00</published><updated>2024-11-05T13:45:00+02:00</updated><author><name>PyCon Israel Team</name></author><id>tag:pycon.org.il,2024-11-05:/2025/he/videos-published.html</id><summary type="html">&lt;p&gt;הקלטות הוידאו של פייקון ישראל 2024 פורסמו&lt;/p&gt;</summary><content type="html">&lt;p&gt;אנו בפייקון ישראל גאות וגאים להודיע כי הקלטות הוידאו מהכנס פורסמו. זה
+<feed xmlns="http://www.w3.org/2005/Atom"><title>פייקון ישראל 2025 - announcements</title><link href="https://pycon.org.il/2025/he/" rel="alternate"></link><link href="https://pycon.org.il/2025/he/feeds/announcements.atom.xml" rel="self"></link><id>https://pycon.org.il/2025/he/</id><updated>2025-03-23T23:00:00+02:00</updated><entry><title>הכרזה על פייקון ישראל 2025</title><link href="https://pycon.org.il/2025/he/announce-pycon25.html" rel="alternate"></link><published>2025-03-23T23:00:00+02:00</published><updated>2025-03-23T23:00:00+02:00</updated><author><name>PyCon Israel Team</name></author><id>tag:pycon.org.il,2025-03-23:/2025/he/announce-pycon25.html</id><summary type="html">&lt;p&gt;הכרזה על פייקון ישראל 2025&lt;/p&gt;</summary><content type="html">&lt;p&gt;📣 חדשות מרגשות לכל אוהבי פייתון! 🐍🎉&lt;/p&gt;
+&lt;p&gt;כנס פייקון ישראל 2025 יוצא לדרך באופן רשמי, ומתוכנן ל-9 בספטמבר 2025, בסינמה סיטי גלילות!&lt;/p&gt;
+&lt;p&gt;הצטרפו אלינו למפגש מדהים של מפתחי ומפתחות פייתון, מדעני נתונים וחובבות
+טכנולוגיה. צפו להרצאות מעוררות השראה, סדנאות מעשיות ופעילויות מהנות! 🚀&lt;/p&gt;
+&lt;p&gt;🎤 הקול הקורא להרצאות כבר פתוח - בקרו בעמוד
+ה&lt;a href="https://pycon.org.il/2025/he/pages/cfp-resources.html"&gt;מקורות&lt;/a&gt; שלנו כדי
+לקבל השראה, ובואו &lt;a href="https://cfp.pycon.org.il/pycon-2025/cfp"&gt;להגיש
+הצעות&lt;/a&gt;!&lt;/p&gt;
+&lt;p&gt;🤝 יש מקום לחסויות! כדי לחשוף את המותג או החברה לקהילת הפייתון המובילה
+בישראל, דברו איתנו! כתבו לנו אל
+&lt;a href="mailto:sponsors@pycon.org.il"&gt;sponsors@pycon.org.il&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;עדכונים נוספים אפשר למצוא באתר
+&lt;a href="https://pycon.org.il/2025/he"&gt;pycon.org.il&lt;/a&gt; , בעמודים שלנו ברשתות
+החברתיות, או ב&lt;a href="https://lists.hamakor.org.il/postorius/lists/news.pycon.org.il/"&gt;רשימת
+התפוצה&lt;/a&gt;.
+נשמח לראות אתכן ואתכם שם!&lt;/p&gt;</content><category term="announcements"></category></entry><entry><title>הקלטות הוידאו של פייקון ישראל 2024 פורסמו</title><link href="https://pycon.org.il/2025/he/videos-published.html" rel="alternate"></link><published>2024-11-05T13:45:00+02:00</published><updated>2024-11-05T13:45:00+02:00</updated><author><name>PyCon Israel Team</name></author><id>tag:pycon.org.il,2024-11-05:/2025/he/videos-published.html</id><summary type="html">&lt;p&gt;הקלטות הוידאו של פייקון ישראל 2024 פורסמו&lt;/p&gt;</summary><content type="html">&lt;p&gt;אנו בפייקון ישראל גאות וגאים להודיע כי הקלטות הוידאו מהכנס פורסמו. זה
 לקח יותר זמן משציפינו (וזה קרה בגללנו), אבל מה שחשוב זה שעכשיו הסרטונים זמינים.&lt;/p&gt;
 &lt;p&gt;אתן ואתם מוזמנים ומוזמנות להשלים כל מה שהחמצתן ופיספסתם; ישנם
 &lt;a href="https://www.youtube.com/@PyConIsrael/playlists"&gt;פלייליסטים&lt;/a&gt; של כל
