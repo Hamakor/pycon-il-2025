@@ -140,8 +140,8 @@ RELATED_EVENTS = [
         title={'en': 'CFP Workshop', 'he': 'סדנת CFP'},
         when={'en': '21.4 17:30', 'he': '21.4 17:30'},
         where={
-            'en': 'Bluevine, Yigal Alon 94 Floor 24',
-            'he': 'משרדי Bluevine, יגאל אלון 94 קומה 24'},
+            'en': 'Bluevine, Yigal Alon 94 Tel Aviv, Floor 24',
+            'he': 'משרדי Bluevine, יגאל אלון 94 תל אביב, קומה 24'},
         description={
             'en': """
             Considering submitting a talk? Join us for an online CFP Workshop.
