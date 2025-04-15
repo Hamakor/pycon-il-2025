@@ -14,24 +14,15 @@ Whether you’ve spent hours hunting down a tricky bug, significantly improved y
 We welcome junior talks because your curiosity, creativity, and “aha!” moments are what keep the Python community growing and evolving — plus, you ask the best questions!
 
 Here are some suggestions for talk ideas:
-1. **"Speed Boost: How I Made My Python Code Run (Way) Faster and What I Learned"**
- → A journey into performance optimization and practical takeaways.
 
-
-2. **"Beyond the Docs: Discovering Hidden Superpowers in a Python Library"**
- → A talk about going deep into a well-known library and finding unexpected features.
-
-
-3. **"My First Year of Bugs: What Debugging Taught Me About Writing Better Code"**
- → A reflective and educational session on common pitfalls, debugging habits, and growth.
-
-
-4. **"LLMs Meet Python: What I’ve Learned Using Tools Like Cursor as a Junior Dev"**
- → A junior’s perspective on integrating modern AI tools into their Python workflow.
+1. **"Speed Boost: How I Made My Python Code Run (Way) Faster and What I Learned"** → A journey into performance optimization and practical takeaways.
+2. **"Beyond the Docs: Discovering Hidden Superpowers in a Python Library"** → A talk about going deep into a well-known library and finding unexpected features.
+3. **"My First Year of Bugs: What Debugging Taught Me About Writing Better Code"** → A reflective and educational session on common pitfalls, debugging habits, and growth.
+4. **"LLMs Meet Python: What I’ve Learned Using Tools Like Cursor as a Junior Dev"** → A junior’s perspective on integrating modern AI tools into their Python workflow.
 
 
 The Call for Proposals (CFP) is officially open, and you can submit talk ideas till May 1st 2025. Submission links and more information: www.pycon.org.il.
 If you’re looking to consult us about what idea is best, our mentors team is here to help – Join the conversation in the 'CFP Consultations' group on WhatsApp.
 
-Meet our mentors in the CFP workshop mentoring event on April 21st at 17:30-20:00 in Tel Aviv, **sign-up here** → https://forms.gle/fMqg2WN8TuojtNHW6
+Meet our mentors in the CFP workshop mentoring event on April 21st at 17:30-20:00 in Tel Aviv, **sign-up here** → [https://forms.gle/fMqg2WN8TuojtNHW6](https://forms.gle/fMqg2WN8TuojtNHW6)
 
