@@ -28,8 +28,9 @@ LLMs Meet Python: What I’ve Learned Using Tools Like Cursor as a Junior Dev
 : A junior’s perspective on integrating modern AI tools into their Python workflow.
 
 
-The Call for Proposals (CFP) is officially open, and you can submit talk ideas till May 1st 2025. Submission links and more information: www.pycon.org.il.
-If you’re looking to consult us about what idea is best, our mentors team is here to help – Join the conversation in the 'CFP Consultations' group on WhatsApp.
+The Call for Proposals (CFP) is officially open, and you can submit talk ideas till May 1st 2025.  
+Submission links and more information: [pycon.org.il]({index}).  
+If you’re looking to consult us about what idea is best, our mentors team is here to help –  
+[Join the conversation](https://chat.whatsapp.com/LdYx5qRXYm7DWdJybGVyml) in the 'CFP Consultations' group on WhatsApp.
 
 Meet our mentors in the CFP workshop mentoring event on April 21st at 17:30-20:00 in Tel Aviv, **sign-up here** → [https://forms.gle/fMqg2WN8TuojtNHW6](https://forms.gle/fMqg2WN8TuojtNHW6)
-
