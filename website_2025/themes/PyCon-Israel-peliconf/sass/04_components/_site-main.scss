@@ -80,7 +80,8 @@
     }
 
     dt {
-        @include font-size(18);
+        /* @include font-size(18); */
+        font-weight: bold;
         color: $blue;
     }
 
