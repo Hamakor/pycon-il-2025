@@ -2,7 +2,7 @@ from  markdown.extensions.toc import slugify_unicode
 
 AUTHOR = 'PyCon Israel Team'
 SITENAME = 'PyCon Israel 2025'
-BIDI_DIR = 'ltr'
+BIDI_DIR = dict(en='ltr', he='rtl')
 SITEURL = ""
 
 EVENT_CLAIM = (
@@ -329,7 +329,6 @@ PAGE_SELECTION_FILTER = get_page_number
 I18N_SUBSITES = {
     'he': {
         'SITENAME': 'פייקון ישראל 2025',
-        'BIDI_DIR': 'rtl',
         'EVENT_CLAIM': (
             'פייקון ישראל הוא כנס המוקדש לשפת התכנות פייתון, '
             'לטכנולוגיות הקשורות אליה, ולשימוש בהן'

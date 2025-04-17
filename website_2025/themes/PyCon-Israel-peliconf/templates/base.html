@@ -1,5 +1,6 @@
 <!doctype html>
-<html lang="{{ DEFAULT_LANG }}" dir="{{ BIDI_DIR }}">
+{% set webpage = page or article or None %}
+<html lang="{{ DEFAULT_LANG }}" dir="{{ BIDI_DIR[webpage.lang or DEFAULT_LANG] }}">
 <head>
 {% block head %}
     <title>{% block title %}{{ SITENAME }}{% endblock title %}</title>
