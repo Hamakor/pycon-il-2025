@@ -123,7 +123,7 @@ BRANDING_LINK = (
     'PyConIL.png',
 )
 EVENT_CTA_BUTTONS = (
-    ('https://cfp.pycon.org.il/pycon-2025/cfp', True,
+    ('https://cfp.pycon.org.il/pycon-2025/cfp', False,
      {'en': 'Propose Content', 'he': 'הגשת הצעות תוכן'}),
     ('mailto:sponsors@pycon.org.il?subject=Sponsorship', True,
      {'en': 'Become a Sponsor', 'he': 'יצירת קשר לחסויות'}),
@@ -144,14 +144,12 @@ RELATED_EVENTS = [
             'he': 'משרדי Bluevine, יגאל אלון 94 תל אביב, קומה 24'},
         description={
             'en': """
-            Considering submitting a talk? Join us for an online CFP Workshop.
-            Along with our experienced speakers and mentors -
-            we are looking forward to sharing some tips and best practices
-            on how to submit a Call For Proposals.""",
+            The workshop included talks and personal discussions,
+            to help potential submitters become successful speakers.
+            See you at the conference, and next year!""",
             'he': """
-            חושבת או חושב להגיש הצעה? הצטרפו אלינו לסדנת CFP.
-            אנחנו, יחד עם דוברות ודוברים מנוסים, מנטורים ומנטוריות,
-            מצפים לחלוק עצות והדרכה לגבי הגשת הצעות.""",
+            הסדנה כללה הרצאות ושיחות פרטניות, כדי לעזור למגישות ומגישים פוטנציאליים
+            להגיע להרצאה מוצלחת בכנס. להתראות בכנס, ובשנה הבאה!""",
         },
         map="https://www.openstreetmap.org/#map=13/32.09734/34.85533",
     ),

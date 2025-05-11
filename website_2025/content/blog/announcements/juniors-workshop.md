@@ -3,6 +3,7 @@ Slug: juniors-announce-cfp-workshop
 Summary: 4 Ideas for Junior Speakers’ Talks @ Pycon Israel 2025
 Lang: en
 date: 2025-04-15 20:05
+cover: images/junior-workshop.jpg
 
 ![Image of 2023 cfp workshop, with text for timing and speakers]({static}/images/junior-workshop.jpg){style="width: 50%; display: block; margin-left: auto; margin-right: auto;"}
 

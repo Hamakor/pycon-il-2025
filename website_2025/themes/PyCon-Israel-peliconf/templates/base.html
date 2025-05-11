@@ -33,12 +33,18 @@
         <link href="{{ FEED_DOMAIN }}/{{ TAG_FEED_RSS|format(slug=tag.slug) }}" type="application/rss+xml" rel="alternate" title="{{ SITENAME }} Tags RSS Feed" />
     {% endif %}
 {% endblock head %}
+{% block meta %}
+        <meta name="author" content="{{ AUTHOR }}" />
+        <meta name="description" content="{{ EVENT_CLAIM }}" />
+        {% include "partials/og.html" %}
+{% endblock meta %}
     <link rel="stylesheet" type="text/css" href="{{ SITEURL }}/{{ THEME_STATIC_DIR }}/css/screen.css">
     <link rel="stylesheet" type="text/css" href="{{ SITEURL }}/{{ THEME_STATIC_DIR }}/font-awesome/css/fontawesome.css">
     <link rel="stylesheet" type="text/css" href="{{ SITEURL }}/{{ THEME_STATIC_DIR }}/font-awesome/css/brands.css">
     <link rel="stylesheet" type="text/css" href="{{ SITEURL }}/{{ THEME_STATIC_DIR }}/font-awesome/css/solid.css">
 
     {% block extra_css %}{% endblock extra_css %}
+    
 </head>
 
 <body>

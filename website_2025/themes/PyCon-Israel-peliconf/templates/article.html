@@ -15,6 +15,21 @@
 
 {% endblock %}
 
+{% block meta %}
+<meta name="author" content="{{ article.author.name }}" />
+<meta name="description" content="{{ article.summary|striptags|escape }}" />
+<meta name="keywords" content="{{ article.tags|join(', ')|escape }}">
+
+{% if article.translations -%}
+<link rel="alternate" href="{{ SITEURL }}/{{ article.url }}" hreflang="{{ article.lang }}" />
+{% for a in article.translations %}
+<link rel="alternate" href="{{ SITEURL }}/{{ a.url }}" hreflang="{{ a.lang }}" />
+{% endfor %}
+{% endif %}
+
+{% include "partials/og_article.html" %}
+{% endblock %}
+
 {% block page_heading %}
 <header class="page-heading">
     <h1 class="page-heading__title">{{ article.title }}</h1>
