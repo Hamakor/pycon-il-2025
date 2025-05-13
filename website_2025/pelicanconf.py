@@ -155,22 +155,23 @@ RELATED_EVENTS = [
     ),
 ]
 # Sponsors (peliconf)
-EVENT_PARTNERS = {} and {
+EVENT_PARTNERS = {
     'diamond': [
-        ('Sponsor', 'http://www.carlorat.me/', 'logo-sponsor.png'),
-        ('Sponsor', 'http://www.carlorat.me/', 'logo-sponsor.png'),
-    ],
-    'platinum': [
-        ('Sponsor', 'http://www.carlorat.me/', 'logo-sponsor.png'),
+        # ('NVIDIA', 'https://developer.nvidia.com', 'NVIDIA.png'),
     ],
     'gold': [
-        ('Sponsor', 'http://www.carlorat.me/', 'logo-sponsor.png'),
+        ('Applied Materials', 'https://www.appliedmaterials.com/',
+         'APPLIED_MATERIALS.jpeg'),
+        ('Nym Health', 'https://nym.health/', 'zencity.jpg'),
+    ],
+    'silver': [
+        ('Red Hat', 'https://www.redhat.com', 'RedHat.svg'),
+    ],
+    'friend': [
         ('Sponsor', 'http://www.carlorat.me/', 'logo-sponsor.png'),
     ],
-    'silver': [],
-    'media': [
-        ('Sponsor', 'http://www.carlorat.me/', 'logo-sponsor.png'),
-        ('Sponsor', 'http://www.carlorat.me/', 'logo-sponsor.png'),
+    'partner': [
+        ('המקור', 'https://www.hamakor.org.il/', 'Hamakor_logo.png'),
     ],
 }
 SOCIAL_LINKS = [

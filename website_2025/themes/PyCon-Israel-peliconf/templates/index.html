@@ -185,17 +185,6 @@
     </div>
     <div class="s-12 m-6 l-3 last-s last-m">
         <div class="partner-platinum">
-            <h2 class="small">Platinum Sponsors</h2>
-            {% for p in EVENT_PARTNERS['platinum'] %}
-                {% include 'partials/partner-link.html' %}
-            {% endfor %}
-            <a href="{{ SITEURL }}/pages/partnership.html" class="partner-link partner-link--become">
-                Become a sponsor!
-            </a>
-        </div>
-    </div>
-    <div class="s-12 m-6 l-3 last-s">
-        <div class="partner-gold">
             <h2 class="small">Gold Sponsors</h2>
             {% for p in EVENT_PARTNERS['gold'] %}
                 {% include 'partials/partner-link.html' %}
@@ -205,8 +194,8 @@
             </a>
         </div>
     </div>
-    <div class="s-12 m-6 l-3 last">
-        <div class="partner-silver">
+    <div class="s-12 m-6 l-3 last-s">
+        <div class="partner-gold">
             <h2 class="small">Silver Sponsors</h2>
             {% for p in EVENT_PARTNERS['silver'] %}
                 {% include 'partials/partner-link.html' %}
@@ -216,12 +205,23 @@
             </a>
         </div>
     </div>
+    <div class="s-12 m-6 l-3 last">
+        <div class="partner-silver">
+            <h2 class="small">Friend Sponsors</h2>
+            {% for p in EVENT_PARTNERS['friend'] %}
+                {% include 'partials/partner-link.html' %}
+            {% endfor %}
+            <a href="{{ SITEURL }}/pages/partnership.html" class="partner-link partner-link--become">
+                Become a sponsor!
+            </a>
+        </div>
+    </div>
     <div class="s-12 last">
         <div class="partner-media ">
-            <h2 class="small partner-media__title">Media Partner</h2>
-            {% for p in EVENT_PARTNERS['media'] %}
+            <h2 class="small partner-media__title">Partners</h2>
+            {% for p in EVENT_PARTNERS['partner'] %}
                 <a href="{{ p.1 }}" class="partner-media-link">
-                    <img src="{{ main_siteurl }}/theme/images/{{ p.2 }}"
+                    <img src="{{ main_siteurl }}/images/sponsor-logos/{{ p.2 }}"
                         class="partner-media-link__img" alt="{{ p.0 }}" />
                 </a>
             {% endfor %}
