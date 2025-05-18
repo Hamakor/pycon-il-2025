@@ -14,6 +14,7 @@ HEADER_BACKGROUND = "pycon-2024-panel.jpg"
 
 BLOG_TITLE = "Updates"
 BLOG_SLUG = "updates"
+SPONSORS_TITLE = "Sponsors and Partners"
 PAST_CONFS_TITLE = "Past PyCon Israel Conferences"
 PAST_CONF_YEARS = [2024, 2023, 2022, 2021, 2019, 2018]
 PAST_CONF_BASE_URL = "https://pycon.org.il/"
@@ -333,7 +334,9 @@ I18N_SUBSITES = {
             'לטכנולוגיות הקשורות אליה, ולשימוש בהן'
         ),
         'BLOG_TITLE': 'עדכונים',
-        'PAST_CONFS_TITLE': "כנסי פייקון ישראל קודמים"
+        'PAST_CONFS_TITLE': "כנסי פייקון ישראל קודמים",
+        'SPONSORS_TITLE': "חסויות ושותפים",
+
     }
 }
 I18N_UNTRANSLATED_ARTICLES = 'keep'
