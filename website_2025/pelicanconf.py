@@ -1,4 +1,5 @@
-from  markdown.extensions.toc import slugify_unicode
+from markdown.extensions.toc import slugify_unicode
+from dataclasses import dataclass
 
 AUTHOR = 'PyCon Israel Team'
 SITENAME = 'PyCon Israel 2025'
@@ -122,13 +123,25 @@ BRANDING_LINK = (
     'PyCon Israel 2025',
     'PyConIL.png',
 )
+
+
+@dataclass
+class Button:
+    href: str
+    label: dict[str, str]
+    active: bool = True
+    tooltip: dict[str, str] = None
+
+
 EVENT_CTA_BUTTONS = (
-    ('https://cfp.pycon.org.il/pycon-2025/cfp', False,
-     {'en': 'Propose Content', 'he': 'הגשת הצעות תוכן'}),
-    ('mailto:sponsors@pycon.org.il?subject=Sponsorship', True,
-     {'en': 'Become a Sponsor', 'he': 'יצירת קשר לחסויות'}),
-    ('#', False,
-     {'en': 'Buy Tickets', 'he': 'קניית כרטיסים'}),
+    Button(href='https://cfp.pycon.org.il/pycon-2025/cfp', active=False,
+           label={'en': 'Propose Content', 'he': 'הגשת הצעות תוכן'},
+           tooltip={'en': 'The call for proposals is closed', 'he': 'הקריאה להצעות כבר נסגרה'}),
+    Button(href='mailto:sponsors@pycon.org.il?subject=Sponsorship',
+           label={'en': 'Become a Sponsor', 'he': 'יצירת קשר לחסויות'}),
+    Button(href='#', active=False,
+           label={'en': 'Buy Tickets', 'he': 'קניית כרטיסים'},
+           tooltip={'en': 'Tickets coming soon', 'he': 'הכרטיסים יצאו למכירה בקרוב'}),
 )
 # The optional related events
 RELATED_EVENTS_TITLE = dict(
