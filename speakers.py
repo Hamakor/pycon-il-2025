@@ -1,4 +1,3 @@
-
 import argparse
 import csv
 import json
@@ -12,7 +11,7 @@ from datetime import datetime
 
 DOMAIN = 'https://cfp.pycon.org.il'
 SPEAKERS_URL_PATH = '/api/events/{event}/speakers/'
-TALKS_URL_PATH = '/api/events/{event}/talks/'
+TALKS_URL_PATH = '/api/events/{event}/submissions/'
 
 
 def save_json(data, file):
@@ -34,7 +33,7 @@ def get_speaker_answers(speaker):
         'Expected experience level of participants': 'experience_level',
         'Target audience': 'target_audience',
         'Other (target audience)': 'target_audience_other',
-        'I agree to allow PyCon Israel 2024 to publish my video(s) under Creative Commons Attribution (CC BY) license.': 'agree_to_publish',
+        'I agree to allow PyCon Israel 2025 to publish my video(s) under Creative Commons Attribution (CC BY) license.': 'agree_to_publish',
         'I am aware of the requirement to participate in dry runs, and will do my best to make myself available': 'dry_run',
     }
 
@@ -126,15 +125,19 @@ def filter_speakers(speakers, talks):
 
 SPAKERS_MD = """Title: Speakers
 Slug: speakers
-Template: speakers
+Template: page
 Lang: en
 page_number: 17
+modified: {modified}
 
 <style>
     body {{
         font-family: Arial, sans-serif;
     }}
-    .container {{
+    section.site-content > container {{
+        max-width: 80%;
+    }}
+    .speaker-container {{
         # display: flex;
         # flex-wrap: wrap;
         display: grid;
@@ -145,7 +148,8 @@ page_number: 17
     }}
     .speaker-card {{
         width: 300px;
-        height: 500px;
+        /*           avatar  bio  info-pad     name           role         social */
+        height: calc(300px + 80px + 20px + 1.2em + 20px + 3.2em + 10px + 1.25em + 20px);
         border: 1px solid #ddd;
         border-radius: 10px;
         overflow: hidden;
@@ -181,7 +185,7 @@ page_number: 17
     .social-links a {{
         text-decoration: none;
         color: #000;
-        font-size: 20px;
+        font-size: 1.25em;
         transition: color 0.3s;
     }}
     .social-links a:hover {{
@@ -206,7 +210,7 @@ page_number: 17
     }}
 </style>
 
-<div class="container">{speakers}</div>
+<div class="speaker-container">{speakers}</div>
 
 """
 SPEAKER_CARD = """
@@ -287,7 +291,10 @@ def generate_speakers_page(speakers):
         ))
     speakers_html = '\n'.join(speakers_list)
 
-    return SPAKERS_MD.format(speakers=speakers_html)
+    return SPAKERS_MD.format(
+        speakers=speakers_html,
+        modified=datetime.now().astimezone(),
+    )
 
 
 def get_args():
