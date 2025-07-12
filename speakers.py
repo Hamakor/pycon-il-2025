@@ -97,27 +97,24 @@ def fetch_handler(event, item_type, token, verbose=False):
 def filter_speakers(speakers, talks):
 
     accepted_talks = [t['code'] for t in talks if t['state'] == 'confirmed']
-    # accepted_speakers = set(
-    #     s['code'] for t in talks for s in t['speakers'] if t['state'] == 'confirmed'
-    # )
-
-    # accepted = []
-    # for speaker in speakers:
-    #     if speaker['code'] in accepted_speakers:
-    #         accepted.append(speaker)
+    keynote_talks = [
+        t['code'] for t in talks
+        if t['state'] == 'confirmed' and 'Keynote' in t['submission_type'].values()
+    ]
 
     accepted = []
     for speaker in speakers:
         for talk in speaker['submissions']:
             if talk in accepted_talks and speaker['answers'].get('agree_to_publish', 'No') == 'True':
+                if talk in keynote_talks:
+                    speaker['keynote'] = True
                 accepted.append(speaker)
-                # break
 
     print('-----')
     print(f"Accepted talks: {len(accepted_talks)}")
-    # print(f"Accepted talks: {accepted_talks}")
+    print(f"Keynote talks: {len(keynote_talks)}")
     print('-----')
-    print(f"Accepted speakers: {len(accepted)}")
+    print(f"Speakers: {len(accepted)}")
     # print(f"Accepted speakers: {accepted}")
 
     return accepted
@@ -141,7 +138,7 @@ modified: {modified}
         # display: flex;
         # flex-wrap: wrap;
         display: grid;
-        grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+        grid-template-columns: repeat(auto-fit, minmax(300px, max-content));
         gap: 20px;
         justify-content: center;
         padding: 20px;
@@ -159,6 +156,9 @@ modified: {modified}
         transition: transform 0.3s;
         display: flex;
         flex-direction: column;
+    }}
+    .speaker-card.keynote {{
+        background: lightyellow;
     }}
     .avatar {{
         width: 300px;
@@ -210,11 +210,12 @@ modified: {modified}
     }}
 </style>
 
+<div class="speaker-container keynote">{keynotes}</div>
 <div class="speaker-container">{speakers}</div>
 
 """
 SPEAKER_CARD = """
-    <div class="speaker-card">
+    <div class="speaker-card {speaker_class}">
         <img src="{avatar}" class="avatar">
         <div class="info">
             <div class="name">{name}</div>
@@ -269,6 +270,7 @@ SOCIAL_ICONS = {
 def generate_speakers_page(speakers):
 
     speakers_list = []
+    keynotes_list = []
     for speaker in speakers:
         avatar = speaker['avatar'] if speaker['avatar'].strip() else '{static}/images/PyConIL.png'
         role = speaker['answers']['role'] if 'role' in speaker['answers'] else ''
@@ -282,16 +284,25 @@ def generate_speakers_page(speakers):
                 social_links.append(f'<a href="{url}" target="_blank"><i class="{stype}"></i></a>')
 
         social_links_html = '\n'.join(social_links)
-        speakers_list.append(SPEAKER_CARD.format(
+        speaker_class = ""
+        the_list = speakers_list
+        if speaker.get('keynote'):
+            speaker_class = "keynote"
+            the_list = keynotes_list
+        the_list.append(SPEAKER_CARD.format(
             avatar=avatar,
             name=speaker['name'].title(),
             role=f"{role}<br/>{company}",
             bio=speaker['biography'],
             social_links=social_links_html,
+            speaker_class=speaker_class,
         ))
+
+    keynotes_html = '\n'.join(keynotes_list)
     speakers_html = '\n'.join(speakers_list)
 
     return SPAKERS_MD.format(
+        keynotes=keynotes_html,
         speakers=speakers_html,
         modified=datetime.now().astimezone(),
     )
