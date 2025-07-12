@@ -4,6 +4,11 @@ on:
   push:
     branches:
       - main
+  workflow_dispatch:
+  schedule:
+    # * is a special character in YAML so this string must stay quoted
+    - cron:  '30 5,13,21 * * *'
+
 
 env:
   INPUT_DIR: ${{ github.workspace }}/website_2025/content
