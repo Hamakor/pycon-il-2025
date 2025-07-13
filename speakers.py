@@ -94,6 +94,11 @@ def fetch_handler(event, item_type, token, verbose=False):
     return data
 
 
+def speaker_is_fake(speaker):
+    email = speaker['email']
+    return email.startswith('cfp+') and email.endswith('@pycon.org.il')
+
+
 def filter_speakers(speakers, talks):
 
     accepted_talks = [t['code'] for t in talks if t['state'] == 'confirmed']
@@ -105,7 +110,7 @@ def filter_speakers(speakers, talks):
     accepted = []
     for speaker in speakers:
         for talk in speaker['submissions']:
-            if talk in accepted_talks and speaker['answers'].get('agree_to_publish', 'No') == 'True':
+            if talk in accepted_talks and not speaker_is_fake(speaker):
                 if talk in keynote_talks:
                     speaker['keynote'] = True
                 accepted.append(speaker)
