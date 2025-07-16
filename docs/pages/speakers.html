@@ -1,0 +1,573 @@
+<!doctype html>
+<html lang="en" dir="ltr">
+<head>
+    <title>Speakers</title>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=9">
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+
+        <link href="https://pycon.org.il/2025/feeds/all.atom.xml" type="application/atom+xml" rel="alternate" title="PyCon Israel 2025 Full Atom Feed" />
+        <link href="https://pycon.org.il/2025/feeds/updates.atom.xml" type="application/atom+xml" rel="alternate" title="PyCon Israel 2025 Atom Feed" />
+        <meta name="author" content="PyCon Israel Team" />
+        <meta name="description" content="PyCon Israel is a conference dedicated to the Python programming language, related technologies, and their use." />
+  <meta property="og:site_name" content="PyCon Israel 2025"/>
+  <meta property="og:type" content="blog"/>
+  <meta property="og:title" content="PyCon Israel 2025"/>
+  <meta property="og:description" content="PyCon Israel is a conference dedicated to the Python programming language, related technologies, and their use."/>
+  <meta property="og:locale" content="en_US"/>
+  <meta property="og:url" content="https://pycon.org.il/2025"/>
+  <meta property="og:image" content="https://pycon.org.il/2025/theme/images/PyConIL.png"/>
+    <link rel="stylesheet" type="text/css" href="https://pycon.org.il/2025/theme/css/screen.css">
+    <link rel="stylesheet" type="text/css" href="https://pycon.org.il/2025/theme/font-awesome/css/fontawesome.css">
+    <link rel="stylesheet" type="text/css" href="https://pycon.org.il/2025/theme/font-awesome/css/brands.css">
+    <link rel="stylesheet" type="text/css" href="https://pycon.org.il/2025/theme/font-awesome/css/solid.css">
+
+    
+</head>
+
+<body>
+
+<header class="site-header"
+    style="background-image: url('https://pycon.org.il/2025/theme/images/pycon-2024-panel.jpg');">
+    <nav role="navigation" class="nagivation navigation--main">
+        <div class="container language-navigation-container">
+        <div class="grid">
+        <div class="s-12 last">
+            <a href="#" class="navigation-hamburger" id="js-navigation-hamburger"></a>
+                <a href="https://pycon.org.il/2025" class="branding-link">
+                        <img src="https://pycon.org.il/2025/theme/images/PyConIL.png"
+                            alt="PyCon Israel 2025" />
+                </a>
+            <ul id="js-navigation--main__list" class="navigation--main__list">
+	      
+
+
+                  <li class="current">
+                    <a target="_self"
+		       href="https://pycon.org.il/2025/pages/speakers.html#speakers">
+		    Speakers
+		    </a>
+		  </li>
+                  <li>
+                    <a target="_self"
+		       href="https://pycon.org.il/2025/pages/cfp-resources.html#cfp-resources">
+		    CFP Resources
+		    </a>
+		  </li>
+                  <li>
+                    <a target="_self"
+		       href="https://pycon.org.il/2025/pages/code-of-conduct.html#code-of-conduct">
+		    Conference Code of Conduct
+		    </a>
+		  </li>
+                  <li>
+                    <a target="_self"
+		       href="https://pycon.org.il/2025/pages/conf-values.html#conf-values">
+		    Conference Values
+		    </a>
+		  </li>
+
+                  
+                <li class="lang-menu">
+                  <a class="lang-menu__item lang-menu-item--current"
+                            href="#">en</a>              
+                    <a class="lang-menu__item"
+                            href="https://pycon.org.il/2025/he/pages/speakers.html">he</a>
+                        
+                </li>
+            </ul>
+        </div>
+        </div>
+        </div>
+    </nav>
+</header>
+
+<main class="site-main main-page">
+<header class="page-heading">
+    <h1 class="page-heading__title">Speakers</h1>
+</header>
+
+    <section class="site-content">
+<div class="container">
+<div class="grid">
+<div class="s-12 last">
+
+    <style>
+    body {
+        font-family: Arial, sans-serif;
+    }
+    section.site-content > container {
+        max-width: 80%;
+    }
+    .speaker-container {
+        # display: flex;
+        # flex-wrap: wrap;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, max-content));
+        gap: 20px;
+        justify-content: center;
+        padding: 20px;
+    }
+    .speaker-card {
+        width: 300px;
+        /*           avatar  bio  info-pad     name           role         social */
+        height: calc(300px + 80px + 20px + 1.2em + 20px + 3.2em + 10px + 1.25em + 20px);
+        border: 1px solid #ddd;
+        border-radius: 10px;
+        overflow: hidden;
+        position: relative;
+        background-color: #fff;
+        text-align: center;
+        transition: transform 0.3s;
+        display: flex;
+        flex-direction: column;
+    }
+    .speaker-card.keynote {
+        /* background: lightyellow; */
+    }
+    .avatar {
+        width: 300px;
+        height: 300px;
+        object-fit: cover;
+    }
+    .info {
+        padding: 10px;
+    }
+    .name {
+        font-size: 1.2em;
+        margin: 10px 0;
+    }
+    .role {
+        color: #666;
+        margin: 5px 0;
+    }
+    .social-links {
+        display: flex;
+        justify-content: center;
+        gap: 10px;
+        margin: 10px 0;
+    }
+    .social-links a {
+        text-decoration: none;
+        color: #000;
+        font-size: 1.25em;
+        transition: color 0.3s;
+    }
+    .social-links a:hover {
+        color: #007bff; /* Change to your desired hover color */
+    }
+    .biography {
+        max-height: 80px;
+        overflow: hidden;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        padding: 10px;
+        background: rgba(0, 0, 0, 0.8);
+        color: #fff;
+        transition: max-height 0.3s, opacity 0.3s;
+        box-sizing: border-box;
+    }
+    .biography:hover {
+        max-height: 200px; /* Adjust based on how much you want to show */
+        overflow-y: auto;
+    }
+</style>
+
+<div class="speaker-container keynote">
+    <div class="speaker-card keynote">
+        <img src="https://cfp.pycon.org.il/media/avatars/Shir_Chorev_Headshot_GeOH4wj.jpg" class="avatar">
+        <div class="info">
+            <div class="name">Shir Chorev</div>
+            <div class="role">CTO<br/>deepchecks</div>
+            <div class="social-links"><a href="https://www.linkedin.com/in/shirchorev/" target="_blank"><i class="fab fa-linkedin"></i></a></div>
+        </div>
+        <div class="biography">
+            <p>Shir is the co-founder and CTO of Deepchecks, a startup for evaluation and continuous validation of AI-based applications. Previously, Shir worked at the Prime Minister’s Office and at Unit 8200, leading research in various Machine Learning and Cyber related problems. Shir has a B.Sc. in Physics from the Hebrew University, which she obtained as part of the Talpiot excellence program, and an M.Sc. in Electrical Engineering from Tel Aviv University. Shir was a featured honoree in the Forbes Europe 30 Under 30 list.</p>
+        </div>
+    </div>
+</div>
+<div class="speaker-container">
+    <div class="speaker-card ">
+        <img src="https://cfp.pycon.org.il/media/avatars/03e2eb823b4e876f733cc5f8cbabe94d_SnzR3CZ.jpg" class="avatar">
+        <div class="info">
+            <div class="name">Yaacov Zamir</div>
+            <div class="role">Software Engineer<br/>Redhat</div>
+            <div class="social-links"><a href="https://github.com/yaacov" target="_blank"><i class="fab fa-github"></i></a></div>
+        </div>
+        <div class="biography">
+            <p>Yaacov is a software engineer at Red Hat, he is a long time contributor to free software projects, volunteer at the Nitzanim project, and like cats.</p>
+        </div>
+    </div>
+
+
+    <div class="speaker-card ">
+        <img src="https://cfp.pycon.org.il/media/avatars/haim_pix_400_400_QTBrPMk.jpg" class="avatar">
+        <div class="info">
+            <div class="name">Haim Michael</div>
+            <div class="role">Professional Software Development Trainer<br/>Zindell Technologies (life michael)</div>
+            <div class="social-links"><a href="https://x.com/lifemichael" target="_blank"><i class="fab fa-twitter"></i></a>
+<a href="https://www.linkedin.com/in/lifemichael/" target="_blank"><i class="fab fa-linkedin"></i></a>
+<a href="https://facebook.com/lifemichael" target="_blank"><i class="fab fa-facebook"></i></a></div>
+        </div>
+        <div class="biography">
+            <p>Haim Michael started coding when he was 8 years old. During the years 2001 – 2007, Haim led the development of more than 200 applications and games for mobile telephones, together with their complementary server-side applications. Haim focuses on programming languages, and his rich knowledge and experience in Java programming span more than 25 years. Haim is a PHP Zend Certified Engineer, OMG-Certified UML Professional, Certified Java Professional, and a Certified Java EE Web Components Developer. In addition, Haim Michael holds an MBA (cum-laude) from Tel Aviv University.</p>
+        </div>
+    </div>
+
+
+    <div class="speaker-card ">
+        <img src="https://pycon.org.il/2025/images/PyConIL.png" class="avatar">
+        <div class="info">
+            <div class="name">Oren Efraim</div>
+            <div class="role">Tech Leader<br/>Check Point</div>
+            <div class="social-links"><a href="https://www.linkedin.com/in/orenefr/" target="_blank"><i class="fab fa-linkedin"></i></a></div>
+        </div>
+        <div class="biography">
+            <p>Tech Leader, Head of Backend Cloud Gilda at Check Point, and Community Leader of Node.js-IL. With extensive experience in backend development and cloud technologies, Oren specializes in cybersecurity and education. He combines technical expertise with a passion for fostering collaboration and innovation. Beyond his professional work, Oren mentors aspiring developers through the Magshimim Program, helping shape the next generation of tech professionals in Israel.</p>
+        </div>
+    </div>
+
+
+    <div class="speaker-card ">
+        <img src="https://cfp.pycon.org.il/media/avatars/Image_from_iOS_Wf9i5dG.jpg" class="avatar">
+        <div class="info">
+            <div class="name">Ofek Tikotzky</div>
+            <div class="role">senior software engineer<br/>Hexagate (acquired by Chainalysis)</div>
+            <div class="social-links"></div>
+        </div>
+        <div class="biography">
+            <p>Former hardware hacker turned Python enthusiast, I’ve worked as a programmable hardware engineer and security researcher. Today, I’m a software engineering team lead at the Hexagate team in Chainalysis, developing a real-time high-scale system that’s based on a distributed micro-service architecture.</p>
+        </div>
+    </div>
+
+
+    <div class="speaker-card ">
+        <img src="https://cfp.pycon.org.il/media/avatars/RT-7445_6KGeUzQ.jpeg" class="avatar">
+        <div class="info">
+            <div class="name">Michal Hershkovitz</div>
+            <div class="role">Senior Backend Developer<br/>K Health</div>
+            <div class="social-links"><a href="https://www.linkedin.com/in/michal-hershkovitz-8bba40130" target="_blank"><i class="fab fa-linkedin"></i></a></div>
+        </div>
+        <div class="biography">
+            <p>I'm a backend developer with over six years of experience, passionate about the startup world and the challenges that come with its rapid changes.
+
+A few months ago, I founded TechGym, a program for seniors, with the goal of creating weekly sessions to stay technology fit.</p>
+        </div>
+    </div>
+
+
+    <div class="speaker-card ">
+        <img src="https://cfp.pycon.org.il/media/avatars/85b84199deecc1b8b009ce9af09fdc82_3CYSrnk.jpg" class="avatar">
+        <div class="info">
+            <div class="name">Tsvi Mostovicz</div>
+            <div class="role">Senior Verification Engineer<br/>Intel</div>
+            <div class="social-links"><a href="https://github.com/tsvi" target="_blank"><i class="fab fa-github"></i></a>
+<a href="https://linkedin.com/in/tsvim" target="_blank"><i class="fab fa-linkedin"></i></a></div>
+        </div>
+        <div class="biography">
+            <p>Tsvi Mostovicz is a senior verification engineer who enjoys writing Python that's both practical and expressive. He maintains the Jewish calendar integration in Home Assistant, provides syntax support for the Specman language, and enjoys exploring Python features that make code cleaner and more maintainable.</p>
+        </div>
+    </div>
+
+
+    <div class="speaker-card ">
+        <img src="https://pycon.org.il/2025/images/PyConIL.png" class="avatar">
+        <div class="info">
+            <div class="name">Haim Zlatokrilov</div>
+            <div class="role">Co-Founder<br/>AutoKitteh</div>
+            <div class="social-links"><a href="https://github.com/autokitteh/autokitteh" target="_blank"><i class="fab fa-github"></i></a>
+<a href="https://www.linkedin.com/in/haim-zlatokrilov-1463818/" target="_blank"><i class="fab fa-linkedin"></i></a></div>
+        </div>
+        <div class="biography">
+            <p>A co-founder and CEO of AutoKitteh. Prior to that, he had been leading product management for cyber security and telecommunication companies. He earned his Ph.D. in computer science from Tel-Aviv University in the field of computer networks.</p>
+        </div>
+    </div>
+
+
+    <div class="speaker-card ">
+        <img src="https://cfp.pycon.org.il/media/avatars/%D7%9E%D7%95%D7%A8_Jrl7V4z.jpeg" class="avatar">
+        <div class="info">
+            <div class="name">Mor Hananovitz</div>
+            <div class="role">Data Science & Engineering Team Lead<br/>LSports</div>
+            <div class="social-links"><a href="https://www.linkedin.com/in/mor-hananovitz/" target="_blank"><i class="fab fa-linkedin"></i></a></div>
+        </div>
+        <div class="biography">
+            <p>Data Science and Engineering Team Lead @ LSports, Lecturer at the Data Analytics program @ Hebrew University and WiDS Community manager.</p>
+        </div>
+    </div>
+
+
+    <div class="speaker-card ">
+        <img src="https://cfp.pycon.org.il/media/avatars/20240224110053_IMG_0158_a4qidtx.JPG" class="avatar">
+        <div class="info">
+            <div class="name">Ortal Ashkenazi</div>
+            <div class="role">Senior Data Scientist<br/>Independent Consultant</div>
+            <div class="social-links"><a href="https://www.linkedin.com/in/ortal-ashkenazi/" target="_blank"><i class="fab fa-linkedin"></i></a></div>
+        </div>
+        <div class="biography">
+            <p>Ortal Ashkenazi is a Data Scientist with a passion for solving real-world problems through data and language. She spent  four years at Gong, where she developed and evaluated natural language processing solutions that transformed complex conversations into clear, actionable insights. Prior to that, she worked as a software engineer at Algotec, building systems for medical imaging. She holds an MSc from the Technion.
+
+She is currently enjoying the richness the world has to offer while seeking her next exciting challenge.</p>
+        </div>
+    </div>
+
+
+    <div class="speaker-card ">
+        <img src="https://pycon.org.il/2025/images/PyConIL.png" class="avatar">
+        <div class="info">
+            <div class="name">Ofek Shilon</div>
+            <div class="role">Senior Developer<br/>Speedata</div>
+            <div class="social-links"><a href="https://github.com/ofekshilon" target="_blank"><i class="fab fa-github"></i></a>
+<a href="https://www.linkedin.com/in/ofekshilon/" target="_blank"><i class="fab fa-linkedin"></i></a></div>
+        </div>
+        <div class="biography">
+            <p>Developer of 20Y+, fiercely hated by his cat for no apparent reason.</p>
+        </div>
+    </div>
+
+
+    <div class="speaker-card ">
+        <img src="https://cfp.pycon.org.il/media/avatars/a232a2504ca4316536e4c904be66370b_R2YIp9c.jpg" class="avatar">
+        <div class="info">
+            <div class="name">Avishay Orpaz</div>
+            <div class="role">SW Engineer<br/>Magos Systems Ltd.</div>
+            <div class="social-links"><a href="https://github.com/avishorp" target="_blank"><i class="fab fa-github"></i></a>
+<a href="https://twitter.com/avishorp" target="_blank"><i class="fab fa-twitter"></i></a></div>
+        </div>
+        <div class="biography">
+            <p>I'm a software engineer at Magos Systems, a company that designs and manufactures Radar for the civil sector. By education, I hold a Bachelor degree from the Technion and M.A from Tel Aviv University, both in Electrical Engineering. I've been in the tech industry for more almost two decades serving as a design engineer in various areas from hardware, through FPGA and software.</p>
+        </div>
+    </div>
+
+
+    <div class="speaker-card ">
+        <img src="https://cfp.pycon.org.il/media/avatars/1000134729_nyq1EH5.jpg" class="avatar">
+        <div class="info">
+            <div class="name">Liza Katz</div>
+            <div class="role">GenAI team lead<br/>Big Data Boutique</div>
+            <div class="social-links"><a href="https://github.com/lizozom" target="_blank"><i class="fab fa-github"></i></a>
+<a href="https://www.linkedin.com/in/lizak/" target="_blank"><i class="fab fa-linkedin"></i></a></div>
+        </div>
+        <div class="biography">
+            <p>Liza Katz is a software engineer with 20+ years of experience in writing code, leading teams, and building clever AI tools with Python, search tech, and large language models.</p>
+        </div>
+    </div>
+
+
+    <div class="speaker-card ">
+        <img src="https://cfp.pycon.org.il/media/avatars/Screenshot_From_2025-07-13_19-55-21_txCQcJa.png" class="avatar">
+        <div class="info">
+            <div class="name">Beni Cherniavsky-Paskin</div>
+            <div class="role"><br/></div>
+            <div class="social-links"></div>
+        </div>
+        <div class="biography">
+            <p>Worked in Python, JS, Ruby, Go and more; nostalgic for Forth, Spreadsheets, Lisp Machines, Boxer.  
+Believe in FOSS as just the starting point of wider unsolved problem of making software transparent to, and modifiable by, end users.  Love interpreters that you can peek & poke at runtime.  
+For now ignorant about AI; interested in human cognition & learning.</p>
+        </div>
+    </div>
+
+
+    <div class="speaker-card ">
+        <img src="https://cfp.pycon.org.il/media/avatars/1IFGYVU5GJDCBOCZ_2F84wW2.jpeg" class="avatar">
+        <div class="info">
+            <div class="name">Sigal Shaked</div>
+            <div class="role">CTO & co-founder<br/>Datawizz</div>
+            <div class="social-links"><a href="https://www.linkedin.com/in/sigalshaked/?originalsubdomain=il" target="_blank"><i class="fab fa-linkedin"></i></a></div>
+        </div>
+        <div class="biography">
+            <p>With 20+ years in data, ML, and GenAI, I blend academic research with real-world innovation. After a PhD focused on early GenAI work, I led GenAI initiatives at Datomize and now build tailored Small Language Models at Datawizz. I'm a founder passionate about AI for good.</p>
+        </div>
+    </div>
+
+
+    <div class="speaker-card ">
+        <img src="https://cfp.pycon.org.il/media/avatars/Cato_k7br6Xd.jpeg" class="avatar">
+        <div class="info">
+            <div class="name">Dean Langsam</div>
+            <div class="role">Data Scientist<br/>SentinelOne</div>
+            <div class="social-links"><a href="https://github.com/deanla" target="_blank"><i class="fab fa-github"></i></a>
+<a href="https://x.com/dean_la" target="_blank"><i class="fab fa-twitter"></i></a></div>
+        </div>
+        <div class="biography">
+            <p>I'm a **data scientist at SentinelOne**, and I'm *passionate about the power of data* to drive insights and innovation.  My work centers around **machine and deep learning**.  I've spent years honing my skills in **Python scientific programming**.  
+As an organizing <span style="color:#F08C28">PyData</span> <span style="color:#0077CC"><strong>Tel Aviv</strong></span> conference member,  I'm dedicated to fostering **collaboration and knowledge-sharing** in the data science community.  
+I take pride in building **Python packages** that make data workflows more streamlined and efficient.  
+
+When I'm not working with data, you can find me hiking in the great outdoors  
+or exploring the vibrant cultural scene of <span style="color:#0077CC"><strong>Tel Aviv</strong></span>.
+
+ChatGPT helped with phrasing this paragraph.  
+Also, the LLM generated the last line entirely, and *it is untrue*.  
+I do have **two daughters** and a **partner** with whom I love spending time.</p>
+        </div>
+    </div>
+
+
+    <div class="speaker-card ">
+        <img src="https://cfp.pycon.org.il/media/haki-benita.png" class="avatar">
+        <div class="info">
+            <div class="name">Haki Benita</div>
+            <div class="role">Dev Lead<br/>hakibenita.com</div>
+            <div class="social-links"><a href="https://github.com/hakib" target="_blank"><i class="fab fa-github"></i></a>
+<a href="https://twitter.com/be_haki" target="_blank"><i class="fab fa-twitter"></i></a>
+<a href="https://www.linkedin.com/in/haki-benita-95327952/" target="_blank"><i class="fab fa-linkedin"></i></a></div>
+        </div>
+        <div class="biography">
+            <p>Software developer and a technical lead. I take special interest in databases, web development, software design and performance tuning. More at https://hakibenita.com</p>
+        </div>
+    </div>
+
+
+    <div class="speaker-card ">
+        <img src="https://cfp.pycon.org.il/media/avatars/Tal-Sofer_0M4A5097f-1-2-3_1_VL7RvyI.jpg" class="avatar">
+        <div class="info">
+            <div class="name">Tal Sofer</div>
+            <div class="role">Product Manager<br/>Treeverse</div>
+            <div class="social-links"><a href="https://www.linkedin.com/in/tal-sofer-179665134/" target="_blank"><i class="fab fa-linkedin"></i></a></div>
+        </div>
+        <div class="biography">
+            <p>Tal Sofer is a product manager at Treeverse, the company behind lakeFS, an open-source platform that delivers a git-like experience to object-storage based data lakes. Tal is a former engineering manager who led engineering teams building scalable tools for developers and started her journey at Treeverse as an R&D team lead.
+
+Tal holds a B.sc in Computer Science and Chinese studies from the Hebrew University of Jerusalem. In her free time you can find her running, cooking or brushing up on her Chinese.</p>
+        </div>
+    </div>
+
+
+    <div class="speaker-card ">
+        <img src="https://cfp.pycon.org.il/media/DALLE_hoodie.png" class="avatar">
+        <div class="info">
+            <div class="name">Erez Waisbard</div>
+            <div class="role">Researcher<br/>CyberArk</div>
+            <div class="social-links"></div>
+        </div>
+        <div class="biography">
+            <p>Dr. Erez Waisbard - Principal Technology Researcher at CyberArk
+
+Erez Waisbard received his Ph.D. degrees in computer science from Bar-Ilan University and his M.Sc. from The Weizmann Institute of Science.
+He has over 25 years of industry experience in security and networks, designing and implementing systems at Lucent, Cisco, NDS and Nokia Bell Labs.
+He is currently a Principal Technology Researcher at CyberArk and a faculty member at the Open University, Israel in the Dept. of Mathematics and Computer Science.
+His research interests include cryptography, security, privacy, networked systems, and algorithms.</p>
+        </div>
+    </div>
+
+
+    <div class="speaker-card ">
+        <img src="https://cfp.pycon.org.il/media/avatars/yonatan_bitton_profile_pic_2025_bzDuOQr.png" class="avatar">
+        <div class="info">
+            <div class="name">Yonatan Bitton</div>
+            <div class="role">Principal Software Engineer<br/>Fortinet</div>
+            <div class="social-links"><a href="https://github.com/bityob" target="_blank"><i class="fab fa-github"></i></a>
+<a href="https://www.linkedin.com/in/bityob/" target="_blank"><i class="fab fa-linkedin"></i></a></div>
+        </div>
+        <div class="biography">
+            <p>Yonatan Bitton, is a Principal Software Engineer at Fortinet with over 12 years of experience in software development. Passionate about tackling challenging coding problems, debugging, and exploring the intricacies of code, he strives to deeply understand the tools and technologies he uses.</p>
+        </div>
+    </div>
+
+
+    <div class="speaker-card ">
+        <img src="https://cfp.pycon.org.il/media/avatars/asaf_blog2_IkueePW.jpg" class="avatar">
+        <div class="info">
+            <div class="name">Asaf Porat Stoler</div>
+            <div class="role">Software development manager<br/>AWS</div>
+            <div class="social-links"><a href="https://github.com/asafpamzn" target="_blank"><i class="fab fa-github"></i></a></div>
+        </div>
+        <div class="biography">
+            <p>Over the past 5 years at AWS ElastiCache, I’ve been responsible for performance evaluation of Redis/Valkey and serverless offerings, developing automation tools for performance qualification and monitoring. I also lead the Valkey-glide open-source initiative, focused on building the best Valkey client. This work has given me deep experience with Python, especially in high-performance and async contexts. I’ve collaborated with open-source communities on Python client libraries, and I'm passionate about pushing the boundaries of Python performance.</p>
+        </div>
+    </div>
+
+
+    <div class="speaker-card ">
+        <img src="https://cfp.pycon.org.il/media/avatars/%D7%A9%D7%99%D7%A8%D7%9C%D7%99_-_%D7%AA%D7%9E%D7%95%D7%A0%D7%AA_%D7%A4%D7%A8%D7%95%D7%A4%D7%99%D7%9C_%D7%A4%D7%A1%D7%A4%D7%95%D7%A8%D7%98_Hr4Zz6J.png" class="avatar">
+        <div class="info">
+            <div class="name">Shirli Di Castro Shashua</div>
+            <div class="role">Senior AI Scientist<br/>Intuit</div>
+            <div class="social-links"><a href="https://www.linkedin.com/in/shirli-di-castro/" target="_blank"><i class="fab fa-linkedin"></i></a></div>
+        </div>
+        <div class="biography">
+            <p>Shirli is a senior AI scientist at Intuit, where she brings cutting-edge innovation to life through generative models and agentic AI. Her areas of expertise span reinforcement learning, LLM training and evaluation, NLP, classical machine learning, and the design of intelligent agents.
+Shirli holds a Ph.D. and M.Sc. in Electrical and Computer Engineering from the Technion, specializing in  Reinforcement Learning, and a B.Sc. in Biomedical Engineering from Ben Gurion University.</p>
+        </div>
+    </div>
+
+
+    <div class="speaker-card ">
+        <img src="https://cfp.pycon.org.il/media/%D7%AA%D7%93%D7%9E%D7%99%D7%AA359%D7%A4%D7%A0%D7%99%D7%9D.jpg" class="avatar">
+        <div class="info">
+            <div class="name">Anat Wax</div>
+            <div class="role">Automation Developer<br/>Red Hat</div>
+            <div class="social-links"><a href="https://github.com/anatw" target="_blank"><i class="fab fa-github"></i></a>
+<a href="https://www.linkedin.com/in/anat-wax-52445740/" target="_blank"><i class="fab fa-linkedin"></i></a></div>
+        </div>
+        <div class="biography">
+            <p>Anat Wax is an automation developer at Red Hat, a Python enthusiast, and a lifelong maker. With a background in musicology and a passion for robotics, she enjoys building creative projects that bring code to life - often with personality, art and movement.</p>
+        </div>
+    </div>
+</div>
+
+		<p>
+		Last updated: Wed 16 July 2025
+		</p>
+
+</div>
+</div>
+</div>
+    </section>
+
+</main>
+
+<footer class="site-footer">
+    <div class="container">
+    <div class="grid">
+    <div class="s-12 m-12 l-7 last-s last-m">
+        <nav class="site-footer-navigation">
+            <a href="https://pycon.org.il/2025/pages/code-of-conduct.html">Conference Code of Conduct</a>
+        <p>
+          Past conferences:
+            <a href="https://pycon.org.il/2024/">2024</a>
+            <a href="https://pycon.org.il/2023/">2023</a>
+            <a href="https://pycon.org.il/2022/">2022</a>
+            <a href="https://pycon.org.il/2021/">2021</a>
+            <a href="https://pycon.org.il/2019/">2019</a>
+            <a href="https://pycon.org.il/2018/">2018</a>
+        </p>
+        </nav>
+    </div>
+    <div class="s-12 m-12 l-5 last">
+        <section class="site-footer__social-links">
+            <a href="https://twitter.com/pyconil/">
+                    <i class="fa-brands fa-twitter"></i>
+            </a>
+            <a href="https://www.youtube.com/@PyConIsrael">
+                    <i class="fa-brands fa-youtube"></i>
+            </a>
+            <a href="https://www.facebook.com/pyconisrael/">
+                    <i class="fa-brands fa-facebook"></i>
+            </a>
+            <a href="https://www.linkedin.com/company/pycon-israel/">
+                    <i class="fa-brands fa-linkedin"></i>
+            </a>
+            <a href="https://tooot.im/@pyconil/">
+                    <i class="fa-brands fa-mastodon"></i>
+            </a>
+            <a href="https://github.com/Hamakor/pycon-il-2025">
+                    <i class="fa-brands fa-github"></i>
+            </a>
+        </section>
+        <p class="site-footer__copyright">
+            <bdi>© Copyright 2025 Hamakor and individual contributors</bdi>
+        </p>
+    </div>
+    </div>
+    </div>
+</footer>
+
+<script src="https://pycon.org.il/2025/theme/js/app-min.js"></script>
+
+</body>
+</html>
