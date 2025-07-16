@@ -1,11 +1,13 @@
 Title: Mobileye
 Slug: mobileye
-Summary: Driving the autonomous vehicle evolution
+Summary:
 Lang: en
-sp_level: 10-diamond
+sp_level: 20-gold
 sp_logo: Mobileye.png
 sp_link: https://mobileye.com
+Template: sponsor-page
 hidden: true
+
 
 Mobileye is leading the mobility revolution with its
 autonomous-driving and driver-assist technologies, harnessing

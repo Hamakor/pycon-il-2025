@@ -6,6 +6,7 @@ sp_level: 30-silver
 sp_logo: RedHat.svg
 sp_link: https://www.redhat.com
 hidden: true
+Template: sponsor-page
 
 **Red Hat**
 

@@ -15,6 +15,7 @@ HEADER_BACKGROUND = "pycon-2024-panel.jpg"
 
 BLOG_TITLE = "Updates"
 BLOG_SLUG = "updates"
+SPONSORS_TITLE = "Sponsors and Partners"
 PAST_CONFS_TITLE = "Past PyCon Israel Conferences"
 PAST_CONF_YEARS = [2024, 2023, 2022, 2021, 2019, 2018]
 PAST_CONF_BASE_URL = "https://pycon.org.il/"
@@ -134,9 +135,11 @@ class Button:
 
 
 EVENT_CTA_BUTTONS = (
-    Button(href='https://cfp.pycon.org.il/pycon-2025/cfp', active=False,
-           label={'en': 'Propose Content', 'he': 'הגשת הצעות תוכן'},
-           tooltip={'en': 'The call for proposals is closed', 'he': 'הקריאה להצעות כבר נסגרה'}),
+    # Button(href='https://cfp.pycon.org.il/pycon-2025/cfp', active=False,
+    #        label={'en': 'Propose Content', 'he': 'הגשת הצעות תוכן'},
+    #        tooltip={'en': 'The call for proposals is closed', 'he': 'הקריאה להצעות כבר נסגרה'}),
+    Button(href='https://cfp.pycon.org.il/pycon-2025/schedule', active=True,
+           label={'en': 'Agenda', 'he': 'תוכנית הכנס'}),
     Button(href='mailto:sponsors@pycon.org.il?subject=Sponsorship',
            label={'en': 'Become a Sponsor', 'he': 'יצירת קשר לחסויות'}),
     Button(href='#', active=False,
@@ -168,22 +171,23 @@ RELATED_EVENTS = [
     ),
 ]
 # Sponsors (peliconf)
-EVENT_PARTNERS = {} and {
+EVENT_PARTNERS = {
     'diamond': [
-        ('Sponsor', 'http://www.carlorat.me/', 'logo-sponsor.png'),
-        ('Sponsor', 'http://www.carlorat.me/', 'logo-sponsor.png'),
-    ],
-    'platinum': [
-        ('Sponsor', 'http://www.carlorat.me/', 'logo-sponsor.png'),
+        # ('NVIDIA', 'https://developer.nvidia.com', 'NVIDIA.png'),
     ],
     'gold': [
-        ('Sponsor', 'http://www.carlorat.me/', 'logo-sponsor.png'),
+        ('Applied Materials', 'https://www.appliedmaterials.com/',
+         'APPLIED_MATERIALS.jpeg'),
+        ('Nym Health', 'https://nym.health/', 'zencity.jpg'),
+    ],
+    'silver': [
+        ('Red Hat', 'https://www.redhat.com', 'RedHat.svg'),
+    ],
+    'friend': [
         ('Sponsor', 'http://www.carlorat.me/', 'logo-sponsor.png'),
     ],
-    'silver': [],
-    'media': [
-        ('Sponsor', 'http://www.carlorat.me/', 'logo-sponsor.png'),
-        ('Sponsor', 'http://www.carlorat.me/', 'logo-sponsor.png'),
+    'partner': [
+        ('המקור', 'https://www.hamakor.org.il/', 'Hamakor_logo.png'),
     ],
 }
 SOCIAL_LINKS = [
@@ -345,7 +349,9 @@ I18N_SUBSITES = {
             'לטכנולוגיות הקשורות אליה, ולשימוש בהן'
         ),
         'BLOG_TITLE': 'עדכונים',
-        'PAST_CONFS_TITLE': "כנסי פייקון ישראל קודמים"
+        'PAST_CONFS_TITLE': "כנסי פייקון ישראל קודמים",
+        'SPONSORS_TITLE': "חסויות ושותפים",
+
     }
 }
 I18N_UNTRANSLATED_ARTICLES = 'keep'

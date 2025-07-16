@@ -1,4 +1,3 @@
-
 import argparse
 import csv
 import json
@@ -12,7 +11,7 @@ from datetime import datetime
 
 DOMAIN = 'https://cfp.pycon.org.il'
 SPEAKERS_URL_PATH = '/api/events/{event}/speakers/'
-TALKS_URL_PATH = '/api/events/{event}/talks/'
+TALKS_URL_PATH = '/api/events/{event}/submissions/'
 
 
 def save_json(data, file):
@@ -34,7 +33,7 @@ def get_speaker_answers(speaker):
         'Expected experience level of participants': 'experience_level',
         'Target audience': 'target_audience',
         'Other (target audience)': 'target_audience_other',
-        'I agree to allow PyCon Israel 2024 to publish my video(s) under Creative Commons Attribution (CC BY) license.': 'agree_to_publish',
+        'I agree to allow PyCon Israel 2025 to publish my video(s) under Creative Commons Attribution (CC BY) license.': 'agree_to_publish',
         'I am aware of the requirement to participate in dry runs, and will do my best to make myself available': 'dry_run',
     }
 
@@ -95,57 +94,82 @@ def fetch_handler(event, item_type, token, verbose=False):
     return data
 
 
-def filter_speakers(speakers, talks):
+def speaker_is_fake(speaker):
+    email = speaker['email']
+    return email.startswith('cfp+') and email.endswith('@pycon.org.il')
+
+
+def filter_speakers(speakers, talks, exclude_workshops=True):
 
     accepted_talks = [t['code'] for t in talks if t['state'] == 'confirmed']
-    # accepted_speakers = set(
-    #     s['code'] for t in talks for s in t['speakers'] if t['state'] == 'confirmed'
-    # )
-
-    # accepted = []
-    # for speaker in speakers:
-    #     if speaker['code'] in accepted_speakers:
-    #         accepted.append(speaker)
+    keynote_talks = [
+        t['code'] for t in talks
+        if t['state'] == 'confirmed' and 'Keynote' in t['submission_type'].values()
+    ]
+    workshops = [
+        t['code'] for t in talks
+        if any('workshop' in ty for ty in t['submission_type'].values())
+    ]
 
     accepted = []
     for speaker in speakers:
         for talk in speaker['submissions']:
-            if talk in accepted_talks and speaker['answers'].get('agree_to_publish', 'No') == 'True':
+            if talk in accepted_talks and not speaker_is_fake(speaker):
+                if talk in keynote_talks:
+                    speaker['keynote'] = True
+                if exclude_workshops and talk in workshops:
+                    continue
                 accepted.append(speaker)
-                # break
 
     print('-----')
     print(f"Accepted talks: {len(accepted_talks)}")
-    # print(f"Accepted talks: {accepted_talks}")
+    print(f"Keynote talks: {len(keynote_talks)}")
     print('-----')
-    print(f"Accepted speakers: {len(accepted)}")
+    print(f"Speakers: {len(accepted)}")
     # print(f"Accepted speakers: {accepted}")
 
     return accepted
 
 
-SPAKERS_MD = """Title: Speakers
+UPDATE_TIME=datetime.now().astimezone()
+
+SPEAKERS_HEADER_EN = f"""Title: Speakers
 Slug: speakers
-Template: speakers
+Template: page
 Lang: en
 page_number: 17
+modified: {UPDATE_TIME}
+"""
 
+SPEAKERS_HEADER_HE = f"""Title: דוברות ודוברים
+Slug: speakers
+Template: page
+Lang: he
+page_number: 17
+modified: {UPDATE_TIME}
+"""
+
+SPEAKERS_CONTENT="""
 <style>
     body {{
         font-family: Arial, sans-serif;
     }}
-    .container {{
+    section.site-content > container {{
+        max-width: 80%;
+    }}
+    .speaker-container {{
         # display: flex;
         # flex-wrap: wrap;
         display: grid;
-        grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+        grid-template-columns: repeat(auto-fit, minmax(300px, max-content));
         gap: 20px;
         justify-content: center;
         padding: 20px;
     }}
     .speaker-card {{
         width: 300px;
-        height: 500px;
+        /*           avatar  bio  info-pad     name           role         social */
+        height: calc(300px + 80px + 20px + 1.2em + 20px + 3.2em + 10px + 1.25em + 20px);
         border: 1px solid #ddd;
         border-radius: 10px;
         overflow: hidden;
@@ -155,6 +179,9 @@ page_number: 17
         transition: transform 0.3s;
         display: flex;
         flex-direction: column;
+    }}
+    .speaker-card.keynote {{
+        /* background: lightyellow; */
     }}
     .avatar {{
         width: 300px;
@@ -181,7 +208,7 @@ page_number: 17
     .social-links a {{
         text-decoration: none;
         color: #000;
-        font-size: 20px;
+        font-size: 1.25em;
         transition: color 0.3s;
     }}
     .social-links a:hover {{
@@ -206,11 +233,12 @@ page_number: 17
     }}
 </style>
 
-<div class="container">{speakers}</div>
+<div class="speaker-container keynote">{keynotes}</div>
+<div class="speaker-container">{speakers}</div>
 
 """
 SPEAKER_CARD = """
-    <div class="speaker-card">
+    <div class="speaker-card {speaker_class}">
         <img src="{avatar}" class="avatar">
         <div class="info">
             <div class="name">{name}</div>
@@ -265,6 +293,7 @@ SOCIAL_ICONS = {
 def generate_speakers_page(speakers):
 
     speakers_list = []
+    keynotes_list = []
     for speaker in speakers:
         avatar = speaker['avatar'] if speaker['avatar'].strip() else '{static}/images/PyConIL.png'
         role = speaker['answers']['role'] if 'role' in speaker['answers'] else ''
@@ -278,16 +307,27 @@ def generate_speakers_page(speakers):
                 social_links.append(f'<a href="{url}" target="_blank"><i class="{stype}"></i></a>')
 
         social_links_html = '\n'.join(social_links)
-        speakers_list.append(SPEAKER_CARD.format(
+        speaker_class = ""
+        the_list = speakers_list
+        if speaker.get('keynote'):
+            speaker_class = "keynote"
+            the_list = keynotes_list
+        the_list.append(SPEAKER_CARD.format(
             avatar=avatar,
             name=speaker['name'].title(),
             role=f"{role}<br/>{company}",
             bio=speaker['biography'],
             social_links=social_links_html,
+            speaker_class=speaker_class,
         ))
+
+    keynotes_html = '\n'.join(keynotes_list)
     speakers_html = '\n'.join(speakers_list)
 
-    return SPAKERS_MD.format(speakers=speakers_html)
+    return SPEAKERS_CONTENT.format(
+        keynotes=keynotes_html,
+        speakers=speakers_html,
+    )
 
 
 def get_args():
@@ -310,10 +350,14 @@ if __name__ == "__main__":
     # output = Path('speakers.json')
     # save_json(accepted_speakers, output)
 
-    md_file = generate_speakers_page(accepted_speakers)
+    md_content = generate_speakers_page(accepted_speakers)
     if args.output:
         with open(args.output, 'w', encoding='utf-8') as f:
-            f.write(md_file)
+            f.write(SPEAKERS_HEADER_EN + md_content)
+        p = Path(args.output)
+        stem_he = p.stem + "_he"
+        with open(p.with_stem(stem_he), 'w', encoding='utf-8') as f:
+            f.write(SPEAKERS_HEADER_HE + md_content)
     else:
-        print(md_file)
+        print(md_content)
 

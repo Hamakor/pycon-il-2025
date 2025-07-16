@@ -4,6 +4,11 @@ on:
   push:
     branches:
       - main
+  workflow_dispatch:
+  schedule:
+    # * is a special character in YAML so this string must stay quoted
+    - cron:  '30 5,13,21 * * *'
+
 
 env:
   INPUT_DIR: ${{ github.workspace }}/website_2025/content
@@ -72,8 +77,8 @@ jobs:
 
       - name: Generated speakers page
         run: |
-          echo restore this when relevant
-          echo poetry run python speakers.py ${{ vars.PRETALX_EVENT_NAME }} -t ${{ vars.PRETALX_API_TOKEN }} -o website_2025/content/pages/speakers.md --verbose
+          # echo restore this when relevant
+          poetry run python speakers.py ${{ vars.PRETALX_EVENT_NAME }} -t ${{ vars.PRETALX_API_TOKEN }} -o website_2025/content/pages/speakers.md --verbose
 
       - name: Build HTML
         run: |

@@ -1,0 +1,13 @@
+{% extends "page.html" %}
+
+{% import 'partials/sponsors.html' as sponsors with context %}
+
+{% block page_heading %}
+<header class="page-heading">
+  <h1 class="page-heading__sponsor-logo">
+    <div class="container">
+      {{ sponsors.sponsor_logo_for(page) }}
+    </div>
+  </h1>
+</header>
+{% endblock %}

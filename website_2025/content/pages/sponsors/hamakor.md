@@ -6,6 +6,7 @@ sp_level: 50-partners
 sp_logo: Hamakor_logo.png
 sp_link: https://www.hamakor.org.il
 hidden: true
+Template: sponsor-page
 
 **Hamakor** – An Israeli Society for Free Software and Open-Source
 Code (Registered Non Profit) aims to be a legal entity that acts as a
