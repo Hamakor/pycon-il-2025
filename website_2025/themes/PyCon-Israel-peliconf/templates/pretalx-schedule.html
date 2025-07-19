@@ -1,0 +1,35 @@
+{% extends "base.html" %}
+
+{% block title %}{{ page.title }}{%endblock%}
+
+{% block page_header %}
+<script type="text/javascript" src="https://cfp.pycon.org.il/pycon-2025/widgets/schedule.js"></script>
+{% endblock %}
+
+{% block page_heading %}
+<header class="page-heading">
+    <h1 class="page-heading__title">{{ page.title }}</h1>
+</header>
+{% endblock %}
+
+{% block main_classes %}main-page{% endblock %}
+
+{% block content %}
+{#
+This div is here to control the width of the schedule table.
+It needs some overflow (x, y or both) to be set to "scroll" or "auto"
+because the Pretalx element looks for it.
+#}
+<div style="width: 90vw; margin-inline-start: 2vw; overflow-x: auto;">
+  
+<pretalx-schedule event-url="https://cfp.pycon.org.il/pycon-2025/" locale="{{ page.lang }}" format="grid" style="--pretalx-clr-primary: #3aa57c"></pretalx-schedule>
+<noscript>
+   <div class="pretalx-widget">
+        <div class="pretalx-widget-info-message">
+            JavaScript is disabled in your browser. To access our schedule without JavaScript,
+            please <a target="_blank" href="https://cfp.pycon.org.il/pycon-2025/schedule/">click here</a>.
+        </div>
+    </div>
+</noscript>
+</div>
+{% endblock %}

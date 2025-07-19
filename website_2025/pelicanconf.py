@@ -83,11 +83,7 @@ class PYCON:
     }
     SPONSORSHIP_AVAILABLE = True
 
-# Peliconf parameters -- no longer used, see above
-# EVENT_DATE = '9/9/2025'
-# EVENT_LOCATION = "Cinema City, Gelilot"
-
-# PyConIL-flex
+# PyConIL-flex style sponsors
 SPONSOR_LEVELS = {
     '10-diamond': {
         'class': "sp-diamond",
@@ -112,6 +108,7 @@ SPONSOR_LEVELS = {
 }
 
 DEFAULT_PAGINATION = False
+DISABLE_URL_HASH = True
 
 # Uncomment following line if you want document-relative URLs when developing
 RELATIVE_URLS = True
@@ -138,7 +135,7 @@ EVENT_CTA_BUTTONS = (
     # Button(href='https://cfp.pycon.org.il/pycon-2025/cfp', active=False,
     #        label={'en': 'Propose Content', 'he': 'הגשת הצעות תוכן'},
     #        tooltip={'en': 'The call for proposals is closed', 'he': 'הקריאה להצעות כבר נסגרה'}),
-    Button(href='https://cfp.pycon.org.il/pycon-2025/schedule', active=True,
+    Button(href='pages/schedule.html', active=True,
            label={'en': 'Agenda', 'he': 'תוכנית הכנס'}),
     Button(href='mailto:sponsors@pycon.org.il?subject=Sponsorship',
            label={'en': 'Become a Sponsor', 'he': 'יצירת קשר לחסויות'}),
@@ -170,26 +167,7 @@ RELATED_EVENTS = [
         map="https://www.openstreetmap.org/#map=13/32.09734/34.85533",
     ),
 ]
-# Sponsors (peliconf)
-EVENT_PARTNERS = {
-    'diamond': [
-        # ('NVIDIA', 'https://developer.nvidia.com', 'NVIDIA.png'),
-    ],
-    'gold': [
-        ('Applied Materials', 'https://www.appliedmaterials.com/',
-         'APPLIED_MATERIALS.jpeg'),
-        ('Nym Health', 'https://nym.health/', 'zencity.jpg'),
-    ],
-    'silver': [
-        ('Red Hat', 'https://www.redhat.com', 'RedHat.svg'),
-    ],
-    'friend': [
-        ('Sponsor', 'http://www.carlorat.me/', 'logo-sponsor.png'),
-    ],
-    'partner': [
-        ('המקור', 'https://www.hamakor.org.il/', 'Hamakor_logo.png'),
-    ],
-}
+
 SOCIAL_LINKS = [
     # Peliconf version of social links
     # 1. The social name
@@ -213,117 +191,6 @@ FOOTER_LINKS = [
     (str(year), f'{PAST_CONF_BASE_URL}{year}/')
     for year in PAST_CONF_YEARS
 ]
-
-# Peliconf: main speakers. Tuple description:
-# 1. Speaker Name
-# 2. Speaker picture, if None a placeholder will be shown
-SPEAKERS = () and (
-    ('Carlo Ascani', 'speaker-male.png'),
-    ('Mario Rossi', None),
-    ('Carla Bianchi', 'speaker-female.png'),
-    ('Chiara Rossi', 'speaker-female.png'),
-)
-
-# Peliconf: conference schedule
-SCHEDULE = (
-    ('09:00', [
-        {
-            'title': 'Registration'
-        },
-    ]),
-    ('09:45', [
-        {
-            'track': 'auditorium',
-            'title': 'Keynote',
-            'slug': 'keynote',
-            'speakers': [
-                'Carlo Ascani',
-            ]
-        },
-    ]),
-    ('10:30', [
-        {
-            'title': 'Coffee Break',
-            'extra_class': 'schedule-item--coffe',
-        },
-    ]),
-    ('10:45', [
-        {
-            'track': 'room A',
-            'title': 'The Awesome Talk',
-            # The talk slug is used to get the detail page
-            'slug': 'the-awesome-talk',
-            'level': 'hard',
-            'language': 'english',
-            'duration': '45 min',
-            'speakers': [
-                'Carlo Ascani',
-            ]
-        },
-        {
-            'track': 'room B',
-            'title': 'The Big Talk',
-            'slug': 'the-big-talk',
-            'level': 'novice',
-            'language': 'italian',
-            'duration': '45 min',
-            'speakers': [
-                'Franco Rossi',
-                'Maria Rossi'
-            ]
-        },
-    ]),
-    ('13:00', [
-        {
-            'title': 'Pranzo',
-            'extra_class': 'schedule-item--lunch',
-        },
-    ]),
-    ('13:45', [
-        {
-            'track': 'room A',
-            'title': 'The Incredible Talk',
-            'slug': 'the-incredible-talk',
-            'level': 'hard',
-            'language': 'english',
-            'duration': '45 min',
-            'speakers': [
-                'Carlo Ascani',
-            ]
-        },
-        {
-            'track': 'room B',
-            'title': 'The Nice Talk',
-            'slug': 'the-nice-talk',
-            'level': 'novice',
-            'language': 'italian',
-            'duration': '45 min',
-            'speakers': [
-                'Franco Rossi',
-                'Maria Rossi'
-            ]
-        },
-    ]),
-    ('15:30', [
-        {
-            'title': 'Coffee Break',
-            'extra_class': 'schedule-item--coffe',
-        },
-    ]),
-    ('16:30', [
-        {
-            'track': 'auditorium',
-            'title': 'Lightning Talks',
-        },
-    ]),
-    ('18:00', [
-        {
-            'title': 'The Beer at the Awesome Pub',
-            'extra_class': 'schedule-item--beer',
-        },
-    ]),
-)
-
 
 IMAGE_PROCESS = {}
 
