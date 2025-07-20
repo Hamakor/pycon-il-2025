@@ -139,9 +139,8 @@ EVENT_CTA_BUTTONS = (
            label={'en': 'Agenda', 'he': 'תוכנית הכנס'}),
     Button(href='mailto:sponsors@pycon.org.il?subject=Sponsorship',
            label={'en': 'Become a Sponsor', 'he': 'יצירת קשר לחסויות'}),
-    Button(href='#', active=False,
-           label={'en': 'Buy Tickets', 'he': 'קניית כרטיסים'},
-           tooltip={'en': 'Tickets coming soon', 'he': 'הכרטיסים יצאו למכירה בקרוב'}),
+    Button(href='https://ti.to/hamakor/pycon2025/', active=True,
+           label={'en': 'Buy Tickets', 'he': 'קניית כרטיסים'}),
 )
 # The optional related events
 RELATED_EVENTS_TITLE = dict(
