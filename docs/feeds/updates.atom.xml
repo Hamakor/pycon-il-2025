@@ -1,5 +1,30 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>PyCon Israel 2025</title><link href="https://pycon.org.il/2025/" rel="alternate"></link><link href="https://pycon.org.il/2025/feeds/updates.atom.xml" rel="self"></link><id>https://pycon.org.il/2025/</id><updated>2025-07-22T22:30:00+03:00</updated><entry><title>PyCon Israel 2025 Tickets Now Available!</title><link href="https://pycon.org.il/2025/tickets-available.html" rel="alternate"></link><published>2025-07-22T22:30:00+03:00</published><updated>2025-07-22T22:30:00+03:00</updated><author><name>PyCon Israel Team</name></author><id>tag:pycon.org.il,2025-07-22:/2025/tickets-available.html</id><summary type="html">&lt;p&gt;PyCon Israel 2025 tickets are available to buy&lt;/p&gt;</summary><content type="html">&lt;p&gt;We're happy to announce that ticket sales are now open.&lt;/p&gt;
+<feed xmlns="http://www.w3.org/2005/Atom"><title>PyCon Israel 2025</title><link href="https://pycon.org.il/2025/" rel="alternate"/><link href="https://pycon.org.il/2025/feeds/updates.atom.xml" rel="self"/><id>https://pycon.org.il/2025/</id><updated>2025-08-12T23:30:00+03:00</updated><entry><title>Discount tickets for PyCon Israel 2025</title><link href="https://pycon.org.il/2025/diversity-tickets-available.html" rel="alternate"/><published>2025-08-12T23:30:00+03:00</published><updated>2025-08-12T23:30:00+03:00</updated><author><name>PyCon Israel Team</name></author><id>tag:pycon.org.il,2025-08-12:/2025/diversity-tickets-available.html</id><summary type="html">&lt;p&gt;Discounted diversity tickets available for PyCon 2025&lt;/p&gt;</summary><content type="html">&lt;h3 id="discounted-diversity-tickets-available-for-pycon-2025"&gt;Discounted diversity tickets available for PyCon 2025&lt;/h3&gt;
+&lt;p&gt;We are pleased to offer discounted tickets to support individuals from
+underrepresented or marginalized groups in tech - aiming to foster
+participation, equity and inclusion in the Israeli Python community.
+PyCon Israel is a 100% volunteer-run, non-profit initiative — by the
+community and for the community.  As in every year, we champion
+initiatives to encourage diversity and work to make the event and its
+content accessible to a wide range of audiences.  Our commitment
+drives us to actively seek speakers and organizers from different
+parts of the community and to provide subsidized tickets for
+participants from underrepresented groups (as well as active-duty and
+reserves military personnel).&lt;/p&gt;
+&lt;p&gt;Join us - PyCon is the largest and official annual conference in
+Israel for Python developers. This year, we’re expecting over 600
+participants — from beginners to seasoned professionals — all coming
+together to enjoy inspiring talks, connect with sponsors, and
+more. It’s the perfect opportunity to step away from the office or
+home, learn something new, and build valuable connections within the
+Python community.&lt;/p&gt;
+&lt;p&gt;📍 &lt;strong&gt;PyCon Israel 2025&lt;/strong&gt; will take place on &lt;strong&gt;September 9&lt;/strong&gt; (Tuesday) – at Cinema City, Gelilot&lt;br&gt;
+💰 &lt;strong&gt;Full price for individuals&lt;/strong&gt;: 250 ₪&lt;br&gt;
+🎫 &lt;strong&gt;Discounted ticket&lt;/strong&gt;: 50 ₪&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;To get a discounted ticket:&lt;/strong&gt;&lt;br&gt;
+Fill in the &lt;a href="https://docs.google.com/forms/d/e/1FAIpQLSc2pjCa8UiVXQ_WLZPrPWPXlgauVjeUWcXNCihQ0_7lJ5X2rQ/viewform"&gt;form&lt;/a&gt;, provide your details and we'll send you a &lt;strong&gt;unique discount code&lt;/strong&gt;. &lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;See all PyCon 2025 info&lt;/strong&gt; + agenda here:&lt;br&gt;
+&lt;a href="https://pycon.org.il"&gt;pycon.org.il&lt;/a&gt;&lt;/p&gt;</content><category term="announcements"/></entry><entry><title>PyCon Israel 2025 Tickets Now Available!</title><link href="https://pycon.org.il/2025/tickets-available.html" rel="alternate"/><published>2025-07-22T22:30:00+03:00</published><updated>2025-07-22T22:30:00+03:00</updated><author><name>PyCon Israel Team</name></author><id>tag:pycon.org.il,2025-07-22:/2025/tickets-available.html</id><summary type="html">&lt;p&gt;PyCon Israel 2025 tickets are available to buy&lt;/p&gt;</summary><content type="html">&lt;p&gt;We're happy to announce that ticket sales are now open.&lt;/p&gt;
 &lt;p&gt;But first, a few words about our Pricing Policy.&lt;/p&gt;
 &lt;p&gt;We have always strived to keep PyCon Israel ticket prices low, to make
 the conference accessible to a wide and diverse audience. Before 2024,
@@ -14,7 +39,7 @@ conference (full price - 450₪), and tickets for individuals, at a more
 affordable price (250₪). We trust conference goers not abuse this
 policy, and hope to be able to keep the lower price available for
 individuals.&lt;/p&gt;
-&lt;p&gt;Now, go &lt;a href="https://ti.to/hamakor/pycon2025"&gt;grab your tickets&lt;/a&gt;!&lt;/p&gt;</content><category term="announcements"></category></entry><entry><title>4 Ideas for Junior Speakers’ Talks @ Pycon Israel 2025</title><link href="https://pycon.org.il/2025/juniors-announce-cfp-workshop.html" rel="alternate"></link><published>2025-04-15T20:05:00+03:00</published><updated>2025-04-15T20:05:00+03:00</updated><author><name>PyCon Israel Team</name></author><id>tag:pycon.org.il,2025-04-15:/2025/juniors-announce-cfp-workshop.html</id><summary type="html">&lt;p&gt;4 Ideas for Junior Speakers’ Talks @ Pycon Israel 2025&lt;/p&gt;</summary><content type="html">&lt;p&gt;&lt;img alt="Image of 2023 cfp workshop, with text for timing and speakers" src="https://pycon.org.il/2025/images/junior-workshop.jpg" style="width: 50%; display: block; margin-left: auto; margin-right: auto;"&gt;&lt;/p&gt;
+&lt;p&gt;Now, go &lt;a href="https://ti.to/hamakor/pycon2025"&gt;grab your tickets&lt;/a&gt;!&lt;/p&gt;</content><category term="announcements"/></entry><entry><title>4 Ideas for Junior Speakers’ Talks @ Pycon Israel 2025</title><link href="https://pycon.org.il/2025/juniors-announce-cfp-workshop.html" rel="alternate"/><published>2025-04-15T20:05:00+03:00</published><updated>2025-04-15T20:05:00+03:00</updated><author><name>PyCon Israel Team</name></author><id>tag:pycon.org.il,2025-04-15:/2025/juniors-announce-cfp-workshop.html</id><summary type="html">&lt;p&gt;4 Ideas for Junior Speakers’ Talks @ Pycon Israel 2025&lt;/p&gt;</summary><content type="html">&lt;p&gt;&lt;img alt="Image of 2023 cfp workshop, with text for timing and speakers" src="https://pycon.org.il/2025/images/junior-workshop.jpg" style="width: 50%; display: block; margin-left: auto; margin-right: auto;"&gt;&lt;/p&gt;
 &lt;h2 id="4-ideas-for-junior-speakers-talks-pycon-israel-2025"&gt;🧠 4 Ideas for Junior Speakers’ Talks @ Pycon Israel 2025&lt;/h2&gt;
 &lt;p&gt;PyCon is coming — and the Call for Proposals is open! You can submit your talk idea now through May 1st, so don’t miss your chance to be part of the lineup. We love seeing fresh perspectives, and junior Python developers bring exactly that.&lt;/p&gt;
 &lt;p&gt;Whether you’ve spent hours hunting down a tricky bug, significantly improved your code’s performance, or discovered surprising new uses for a familiar library — your journey is packed with insights others can learn from. Maybe you have learned something interesting on modern unit and integration tools, or you’re deep into LLM-related tools like Cursor and how they tie into Python — whatever your angle, we’d love to hear your story!&lt;/p&gt;
@@ -34,7 +59,7 @@ individuals.&lt;/p&gt;
 Submission links and more information: &lt;a href="https://pycon.org.il/2025/index.html"&gt;pycon.org.il&lt;/a&gt;.&lt;br&gt;
 If you’re looking to consult us about what idea is best, our mentors team is here to help –&lt;br&gt;
 &lt;a href="https://chat.whatsapp.com/LdYx5qRXYm7DWdJybGVyml"&gt;Join the conversation&lt;/a&gt; in the 'CFP Consultations' group on WhatsApp.&lt;/p&gt;
-&lt;p&gt;Meet our mentors in the CFP workshop mentoring event on April 21st at 17:30-20:00 in Tel Aviv, &lt;strong&gt;sign-up here&lt;/strong&gt; → &lt;a href="https://forms.gle/fMqg2WN8TuojtNHW6"&gt;https://forms.gle/fMqg2WN8TuojtNHW6&lt;/a&gt;&lt;/p&gt;</content><category term="announcements"></category></entry><entry><title>PyCon Israel 2025 CFP Workshop</title><link href="https://pycon.org.il/2025/announce-cfp-workshop.html" rel="alternate"></link><published>2025-04-07T20:05:00+03:00</published><updated>2025-04-07T20:05:00+03:00</updated><author><name>PyCon Israel Team</name></author><id>tag:pycon.org.il,2025-04-07:/2025/announce-cfp-workshop.html</id><summary type="html">&lt;p&gt;Pycon Israel 2025 CFP Workshop&lt;/p&gt;</summary><content type="html">&lt;p&gt;&lt;img alt="Image of 2023 cfp workshop, with text for timing and speakers" src="https://pycon.org.il/2025/images/workshop-post.png"&gt;&lt;/p&gt;
+&lt;p&gt;Meet our mentors in the CFP workshop mentoring event on April 21st at 17:30-20:00 in Tel Aviv, &lt;strong&gt;sign-up here&lt;/strong&gt; → &lt;a href="https://forms.gle/fMqg2WN8TuojtNHW6"&gt;https://forms.gle/fMqg2WN8TuojtNHW6&lt;/a&gt;&lt;/p&gt;</content><category term="announcements"/></entry><entry><title>PyCon Israel 2025 CFP Workshop</title><link href="https://pycon.org.il/2025/announce-cfp-workshop.html" rel="alternate"/><published>2025-04-07T20:05:00+03:00</published><updated>2025-04-07T20:05:00+03:00</updated><author><name>PyCon Israel Team</name></author><id>tag:pycon.org.il,2025-04-07:/2025/announce-cfp-workshop.html</id><summary type="html">&lt;p&gt;Pycon Israel 2025 CFP Workshop&lt;/p&gt;</summary><content type="html">&lt;p&gt;&lt;img alt="Image of 2023 cfp workshop, with text for timing and speakers" src="https://pycon.org.il/2025/images/workshop-post.png"&gt;&lt;/p&gt;
 &lt;h4 id="join-our-cfp-workshop"&gt;Join our CFP Workshop&lt;/h4&gt;
 &lt;p&gt;Call for Proposals: CFP Workshop Invite!&lt;/p&gt;
 &lt;p&gt;Are you passionate about Python and excited to share what you know?
@@ -51,7 +76,7 @@ Pycon 2025.&lt;/p&gt;
 &lt;p&gt;Huge thanks to @Bluevine Israel for supporting PyCon and welcoming our
 events into your space — we’re grateful for your hospitality and
 community spirit.&lt;/p&gt;
-&lt;p&gt;Let’s build something great together. See you at the workshop!&lt;/p&gt;</content><category term="announcements"></category></entry><entry><title>Announcing PyCon Israel 2025</title><link href="https://pycon.org.il/2025/announce-pycon25.html" rel="alternate"></link><published>2025-03-23T23:00:00+02:00</published><updated>2025-03-23T23:00:00+02:00</updated><author><name>PyCon Israel Team</name></author><id>tag:pycon.org.il,2025-03-23:/2025/announce-pycon25.html</id><summary type="html">&lt;p&gt;Announcing PyCon Israel 2025&lt;/p&gt;</summary><content type="html">&lt;p&gt;📣 Exciting news for all Python lovers! 🐍🎉&lt;/p&gt;
+&lt;p&gt;Let’s build something great together. See you at the workshop!&lt;/p&gt;</content><category term="announcements"/></entry><entry><title>Announcing PyCon Israel 2025</title><link href="https://pycon.org.il/2025/announce-pycon25.html" rel="alternate"/><published>2025-03-23T23:00:00+02:00</published><updated>2025-03-23T23:00:00+02:00</updated><author><name>PyCon Israel Team</name></author><id>tag:pycon.org.il,2025-03-23:/2025/announce-pycon25.html</id><summary type="html">&lt;p&gt;Announcing PyCon Israel 2025&lt;/p&gt;</summary><content type="html">&lt;p&gt;📣 Exciting news for all Python lovers! 🐍🎉&lt;/p&gt;
 &lt;p&gt;PyCon Israel 2025 is officially happening on September 9th, 2025, at
 Cinema City, Gelilot!&lt;/p&gt;
 &lt;p&gt;Join us for an incredible gathering of Python developers, data
@@ -67,7 +92,7 @@ brand to Israel's top Python community? Let's talk! Mail us at
 &lt;p&gt;Stay updated by visiting us at &lt;a href="https://pycon.org.il"&gt;pycon.org.il&lt;/a&gt; ,
 following us on social networks, or &lt;a href="https://lists.hamakor.org.il/postorius/lists/news.pycon.org.il/"&gt;subscribing to our mailing
 list&lt;/a&gt;. We
-can't wait to see you there!&lt;/p&gt;</content><category term="announcements"></category></entry><entry><title>PyCon Israel 2024 Videos Published</title><link href="https://pycon.org.il/2025/videos-published.html" rel="alternate"></link><published>2024-11-05T13:45:00+02:00</published><updated>2024-11-05T13:45:00+02:00</updated><author><name>PyCon Israel Team</name></author><id>tag:pycon.org.il,2024-11-05:/2025/videos-published.html</id><summary type="html">&lt;p&gt;The PyCon Israel 2024 videos are out&lt;/p&gt;</summary><content type="html">&lt;p&gt;PyCon Israel 2024 is proud to announce that the videos recorded at the
+can't wait to see you there!&lt;/p&gt;</content><category term="announcements"/></entry><entry><title>PyCon Israel 2024 Videos Published</title><link href="https://pycon.org.il/2025/videos-published.html" rel="alternate"/><published>2024-11-05T13:45:00+02:00</published><updated>2024-11-05T13:45:00+02:00</updated><author><name>PyCon Israel Team</name></author><id>tag:pycon.org.il,2024-11-05:/2025/videos-published.html</id><summary type="html">&lt;p&gt;The PyCon Israel 2024 videos are out&lt;/p&gt;</summary><content type="html">&lt;p&gt;PyCon Israel 2024 is proud to announce that the videos recorded at the
 day of talks are finally available. It took a bit longer than we
 expected (and we take the full responsibility for that), but they're
 finally out.&lt;/p&gt;
@@ -78,4 +103,4 @@ whole day as well as per hall.&lt;/p&gt;
 day, as well as &lt;a href="https://photos.app.goo.gl/xBMKNEnpUe4tfK7K8"&gt;those from the workshops
 day&lt;/a&gt;, had already been
 published.&lt;/p&gt;
-&lt;p&gt;Thanks to everyone who made this happen!&lt;/p&gt;</content><category term="announcements"></category></entry></feed>
+&lt;p&gt;Thanks to everyone who made this happen!&lt;/p&gt;</content><category term="announcements"/></entry></feed>
