@@ -4,6 +4,8 @@ Summary: Discounted diversity tickets available for PyCon 2025
 Lang: en
 date: 2025-08-12 23:30
 
+![Image of 2024 hall with audience and panel slide on screen]({static}/images/2024-assembly.jpg){style="width: 70%; display: block; margin-left: auto; margin-right: auto;"}
+
 ### Discounted diversity tickets available for PyCon 2025
 
 We are pleased to offer discounted tickets to support individuals from
