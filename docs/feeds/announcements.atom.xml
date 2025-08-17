@@ -1,5 +1,22 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>PyCon Israel 2025 - announcements</title><link href="https://pycon.org.il/2025/" rel="alternate"/><link href="https://pycon.org.il/2025/feeds/announcements.atom.xml" rel="self"/><id>https://pycon.org.il/2025/</id><updated>2025-08-12T23:30:00+03:00</updated><entry><title>Discount tickets for PyCon Israel 2025</title><link href="https://pycon.org.il/2025/diversity-tickets-available.html" rel="alternate"/><published>2025-08-12T23:30:00+03:00</published><updated>2025-08-12T23:30:00+03:00</updated><author><name>PyCon Israel Team</name></author><id>tag:pycon.org.il,2025-08-12:/2025/diversity-tickets-available.html</id><summary type="html">&lt;p&gt;Discounted diversity tickets available for PyCon 2025&lt;/p&gt;</summary><content type="html">&lt;p&gt;&lt;img alt="Image of 2024 hall with audience and panel slide on screen" src="https://pycon.org.il/2025/images/2024-assembly.jpg" style="width: 70%; display: block; margin-left: auto; margin-right: auto;"&gt;&lt;/p&gt;
+<feed xmlns="http://www.w3.org/2005/Atom"><title>PyCon Israel 2025 - announcements</title><link href="https://pycon.org.il/2025/" rel="alternate"/><link href="https://pycon.org.il/2025/feeds/announcements.atom.xml" rel="self"/><id>https://pycon.org.il/2025/</id><updated>2025-08-17T23:30:00+03:00</updated><entry><title>Tickets for PyCon Israel Workshops</title><link href="https://pycon.org.il/2025/workshop-tickets-available.html" rel="alternate"/><published>2025-08-17T23:30:00+03:00</published><updated>2025-08-17T23:30:00+03:00</updated><author><name>PyCon Israel Team</name></author><id>tag:pycon.org.il,2025-08-17:/2025/workshop-tickets-available.html</id><summary type="html">&lt;p&gt;Tickets for PyCon Israel workshops are available&lt;/p&gt;</summary><content type="html">&lt;p&gt;&lt;img alt="Tutor and students at 2024 workshops" src="https://pycon.org.il/2025/images/2024-geopandas-workshop.jpg" style="width: 70%; display: block; margin-left: auto; margin-right: auto;"&gt;&lt;/p&gt;
+&lt;h3 id="tickets-for-pycon-israel-workshops"&gt;Tickets for PyCon Israel Workshops&lt;/h3&gt;
+&lt;p&gt;PyCon Israel is excited to announce that our &lt;a href="https://ti.to/hamakor/pycon2025"&gt;ticketing
+page&lt;/a&gt; now offers also tickets for
+&lt;a href="https://cfp.pycon.org.il/pycon-2025/schedule/#2025-09-10"&gt;two
+workshops&lt;/a&gt;,
+to be held at Reichman University on Wednesday 10.9.&lt;/p&gt;
+&lt;p&gt;As in all recent years, we will hold on the day after the conference
+talks, a more modest event of workshops: Long sessions of intense
+learning by guided work, in small classes of up to 25 students. This
+year, setting up this event ran into some hurdles and delays, but it
+all came through in the end.&lt;/p&gt;
+&lt;p&gt;As in previous years, the workshops are free of charge, but because
+seats in them are so limited, registration is at a token cost -- and
+the money is returned to people who show up; that is, the intention is
+to charge only if you take up a seat, and leave it unused.&lt;/p&gt;
+&lt;p&gt;We thank Reichman University for making the venue available to us.&lt;br&gt;
+Join us on these workshops too!&lt;/p&gt;</content><category term="announcements"/></entry><entry><title>Discount tickets for PyCon Israel 2025</title><link href="https://pycon.org.il/2025/diversity-tickets-available.html" rel="alternate"/><published>2025-08-12T23:30:00+03:00</published><updated>2025-08-12T23:30:00+03:00</updated><author><name>PyCon Israel Team</name></author><id>tag:pycon.org.il,2025-08-12:/2025/diversity-tickets-available.html</id><summary type="html">&lt;p&gt;Discounted diversity tickets available for PyCon 2025&lt;/p&gt;</summary><content type="html">&lt;p&gt;&lt;img alt="Image of 2024 hall with audience and panel slide on screen" src="https://pycon.org.il/2025/images/2024-assembly.jpg" style="width: 70%; display: block; margin-left: auto; margin-right: auto;"&gt;&lt;/p&gt;
 &lt;h3 id="discounted-diversity-tickets-available-for-pycon-2025"&gt;Discounted diversity tickets available for PyCon 2025&lt;/h3&gt;
 &lt;p&gt;We are pleased to offer discounted tickets to support individuals from
 underrepresented or marginalized groups in tech - aiming to foster
