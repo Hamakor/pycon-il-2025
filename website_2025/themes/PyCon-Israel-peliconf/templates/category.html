@@ -1,0 +1,9 @@
+{% extends "blog-index.html" %}
+{% block title %} {{ SITENAME }} &ndash; {{ category }}{% endblock %}
+{% set summarise = True %}
+
+{% block page_heading %}
+<header class="page-heading">
+    <h1 class="page-heading__title">{{ BLOG_TITLE }} &ndash; {{ category }}</h1>
+</header>
+{% endblock %}

@@ -1,0 +1,59 @@
+{% extends "page.html" %}
+
+{% block content %}
+
+<div class="container">
+<div class="s-12 m-6 l-6 last-s">
+
+    <section class="site-news">
+
+        <ol class="news-list">
+            {% for article in articles %}
+            <li>
+                <article class="news-article">
+                    <aside class="news-article__aside">
+                        <time datetime="{{ article.date.isoformat() }}">
+                            {{ article.locale_date }}
+                        </time>
+                        <a href="{{ SITEURL }}/{{ article.category.url }}">
+                            {{ article.category }}
+                        </a>
+                    </aside>
+                    <header class="news-article__header">
+                        <h2 class="news-article__header__title">
+                            <a href="{{ SITEURL }}/{{ article.url }}"
+                                rel="bookmark"
+                                title="{{ article.title|striptags }}">
+                                    {{ article.title }}
+                            </a>
+                        </h2>
+                    </header>
+                    <div>
+                      {% if summarise or article.metadata['summary'] or SUMMARY_MAX_LENGTH %}
+                        {% if  article.featured_image %}
+                          <img src="{{ article.featured_image }}">
+                        {% endif %}
+                        <div>{{ article.summary }}</div>
+                        {% if article.content != article.summary %}
+                          <br>
+                          <a class="btn"
+                            href="{{ SITEURL }}/{{ article.url }}{% if not DISABLE_URL_HASH %}#{{ article.slug }}{% endif %}">
+                            {{ _('Continue reading') }}
+                          </a>
+                        {% endif %}
+                      {% else %}
+                        {{ article.content }}
+                      {% endif %}
+                    </div>
+                    {% if not loop.last %}
+                      <hr />
+                    {% endif %}
+                </article>
+            </li>
+            {% endfor %}
+        </ol>
+    </section>
+</div>
+</div>
+
+{% endblock %}

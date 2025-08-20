@@ -1,0 +1,7 @@
+<p class="paginator">
+    {% for p in pages %} 
+        {% if p.template == "blog-index" %}
+            <a href="{{ SITEURL }}/{{ p.url }}">{{ BLOG_ALL }}</a>
+        {% endif %}
+    {% endfor %}
+</p>

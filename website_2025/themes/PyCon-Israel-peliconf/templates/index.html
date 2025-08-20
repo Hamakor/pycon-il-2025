@@ -71,7 +71,7 @@
         </header>
 
         <ol class="news-list">
-            {% for article in articles_page.object_list %}
+            {% for article in articles_page.object_list[:5] %}
             <li>
                 <article class="news-article">
                     <aside class="news-article__aside">
@@ -93,8 +93,8 @@
             {% endfor %}
         </ol>
 
-        {% if articles_page.has_other_pages() %}
-            {% include 'pagination.html' %}
+        {% if articles_page.object_list[5:] %}
+            {% include 'partials/link_to_blog.html' %}
         {% endif %}
     </section>
 </div>
@@ -213,6 +213,6 @@
     </div>
     </div>
 </section>
-{% endif %}{# EVENT_PARTNERS #}
+{% endif %}{# SPONSOR_LEVELS #}
 
 {% endblock content %}
