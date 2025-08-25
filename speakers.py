@@ -99,7 +99,7 @@ def speaker_is_fake(speaker):
     return email.startswith('cfp+') and email.endswith('@pycon.org.il')
 
 
-def filter_speakers(speakers, talks, exclude_workshops=True):
+def filter_speakers(speakers, talks, exclude_workshops=False):
 
     accepted_talks = [t['code'] for t in talks if t['state'] == 'confirmed']
     keynote_talks = [
