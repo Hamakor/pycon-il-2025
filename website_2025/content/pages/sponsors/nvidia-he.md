@@ -2,8 +2,8 @@ Title: NVIDIA
 Slug: nvidia
 Summary:
 Lang: he
-sp_level: 20-gold
-sp_logo: NVIDIA_2D_H.jpg
+sp_level: 10-diamond
+sp_logo: NVIDIA_2D_H.svg
 sp_link: https://developer.nvidia.com
 Template: sponsor-page
 hidden: true
