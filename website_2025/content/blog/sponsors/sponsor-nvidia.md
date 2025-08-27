@@ -2,7 +2,7 @@ Title: Meet Our Sponsor - NVIDIA
 Slug: meet-our-sponsor-nvidia
 Summary: Meet our sponsor - NVIDIA
 Lang: en
-date: 2025-08-21 10:05
+date: 2025-08-27 10:05
 cover: images/sponsor-posts/nvidia.png
 
 ![Image of NVIDIA sponsor post]({static}/images/sponsor-posts/nvidia.png){style="width: 50%; display: block; margin-left: auto; margin-right: auto;"}
