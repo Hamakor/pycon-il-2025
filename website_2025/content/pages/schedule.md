@@ -2,6 +2,6 @@ Title: Agenda
 Slug: schedule
 Summary: Times and halls for talks and workshops
 Lang: en
-page_number: 15
+page_number: 
 Template: pretalx-schedule
 

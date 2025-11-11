@@ -2,6 +2,6 @@ Title: תוכנית
 Slug: schedule
 Summary: זמנים ואולמות של הרצאות וסדנאות
 Lang: he
-page_number: 15
+page_number: 
 Template: pretalx-schedule
 
