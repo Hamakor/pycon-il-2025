@@ -1,5 +1,28 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>PyCon Israel 2025</title><link href="https://pycon.org.il/2025/" rel="alternate"/><link href="https://pycon.org.il/2025/feeds/all.atom.xml" rel="self"/><id>https://pycon.org.il/2025/</id><updated>2025-08-27T10:05:00+03:00</updated><entry><title>Meet Our Sponsor - NVIDIA</title><link href="https://pycon.org.il/2025/meet-our-sponsor-nvidia.html" rel="alternate"/><published>2025-08-27T10:05:00+03:00</published><updated>2025-08-27T10:05:00+03:00</updated><author><name>PyCon Israel Team</name></author><id>tag:pycon.org.il,2025-08-27:/2025/meet-our-sponsor-nvidia.html</id><summary type="html">&lt;p&gt;Meet our sponsor - NVIDIA&lt;/p&gt;</summary><content type="html">&lt;p&gt;&lt;img alt="Image of NVIDIA sponsor post" src="https://pycon.org.il/2025/images/sponsor-posts/nvidia.png" style="width: 50%; display: block; margin-left: auto; margin-right: auto;"&gt;&lt;/p&gt;
+<feed xmlns="http://www.w3.org/2005/Atom"><title>PyCon Israel 2025</title><link href="https://pycon.org.il/2025/" rel="alternate"/><link href="https://pycon.org.il/2025/feeds/all.atom.xml" rel="self"/><id>https://pycon.org.il/2025/</id><updated>2025-11-12T00:00:00+02:00</updated><entry><title>PyCon Israel 2025 Videos Published</title><link href="https://pycon.org.il/2025/videos-published.html" rel="alternate"/><published>2025-11-12T00:00:00+02:00</published><updated>2025-11-12T00:00:00+02:00</updated><author><name>PyCon Israel Team</name></author><id>tag:pycon.org.il,2025-11-12:/2025/videos-published.html</id><summary type="html">&lt;p&gt;The PyCon Israel 2025 videos are out&lt;/p&gt;</summary><content type="html">&lt;p&gt;PyCon Israel 2025 is proud to announce that the videos recorded at the
+day of talks are finally available. It took a bit longer than we
+expected (and we take the full responsibility for that), but they're
+finally out.&lt;/p&gt;
+&lt;p&gt;Go catch up on whatever you missed -- there are
+&lt;a href="https://www.youtube.com/@PyConIsrael/playlists"&gt;playlists&lt;/a&gt; for the
+whole day as well as per hall.&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://photos.app.goo.gl/vdUwzsKGra1P8d729"&gt;High Resolution Photos&lt;/a&gt; from that
+day are available in one album. Low resolution photos have been split between 
+&lt;a href="https://photos.app.goo.gl/pTzTY7jrYcWmvcQN9"&gt;talks&lt;/a&gt; and 
+&lt;a href="https://photos.app.goo.gl/31Yz1drk6xX9ReCZ6"&gt;atmosphere&lt;/a&gt; albums. To our regret, 
+the sets are not exactly congruent; some photos are only available in one of the 
+resolutions.&lt;/p&gt;
+&lt;p&gt;Thanks to everyone who made this happen!&lt;/p&gt;</content><category term="announcements"/></entry><entry><title>הקלטות הוידאו של פייקון ישראל 2025 פורסמו</title><link href="https://pycon.org.il/2025/he/videos-published.html" rel="alternate"/><published>2025-11-12T00:00:00+02:00</published><updated>2025-11-12T00:00:00+02:00</updated><author><name>PyCon Israel Team</name></author><id>tag:pycon.org.il,2025-11-12:/2025/he/videos-published.html</id><summary type="html">&lt;p&gt;הקלטות הוידאו של פייקון ישראל 2025 פורסמו&lt;/p&gt;</summary><content type="html">&lt;p&gt;אנו בפייקון ישראל גאות וגאים להודיע כי הקלטות הוידאו מהכנס פורסמו. זה
+לקח יותר זמן משציפינו (וזה קרה בגללנו), אבל מה שחשוב זה שעכשיו הסרטונים זמינים.&lt;/p&gt;
+&lt;p&gt;אתן ואתם מוזמנים ומוזמנות להשלים כל מה שהחמצתן ופיספסתם; ישנם
+&lt;a href="https://www.youtube.com/@PyConIsrael/playlists"&gt;פלייליסטים&lt;/a&gt; של כל
+היום, וגם כאלה נפרדים לכל אולם.&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://photos.app.goo.gl/vdUwzsKGra1P8d729"&gt;תמונות ברזולוציה גבוהה&lt;/a&gt; מהיום 
+הזה נמצאות באלבום אחד. התמונות ברזולוציה נמוכה חולקו לשני אלבומים, 
+&lt;a href="https://photos.app.goo.gl/pTzTY7jrYcWmvcQN9"&gt;הרצאות&lt;/a&gt; 
+ו&lt;a href="https://photos.app.goo.gl/31Yz1drk6xX9ReCZ6"&gt;אווירה&lt;/a&gt;. לצערנו, חלק מהתמונות 
+קיימות רק באחת מהרזולוציות.&lt;/p&gt;
+&lt;p&gt;תודה לכל מי שתרמו לאירוע!&lt;/p&gt;</content><category term="announcements"/></entry><entry><title>Meet Our Sponsor - NVIDIA</title><link href="https://pycon.org.il/2025/meet-our-sponsor-nvidia.html" rel="alternate"/><published>2025-08-27T10:05:00+03:00</published><updated>2025-08-27T10:05:00+03:00</updated><author><name>PyCon Israel Team</name></author><id>tag:pycon.org.il,2025-08-27:/2025/meet-our-sponsor-nvidia.html</id><summary type="html">&lt;p&gt;Meet our sponsor - NVIDIA&lt;/p&gt;</summary><content type="html">&lt;p&gt;&lt;img alt="Image of NVIDIA sponsor post" src="https://pycon.org.il/2025/images/sponsor-posts/nvidia.png" style="width: 50%; display: block; margin-left: auto; margin-right: auto;"&gt;&lt;/p&gt;
 &lt;h2 id="meet-our-sponsor-nvidia"&gt;Meet Our Sponsor - NVIDIA&lt;/h2&gt;
 &lt;p&gt;As a leader in AI, data science, and high-performance computing, NVIDIA continues to empower developers and innovators around the world. Their support helps make PyCon possible, bringing the Python community together to share, learn, and grow.&lt;/p&gt;
 &lt;p&gt;Learn more at &lt;a href="https://www.nvidia.com"&gt;https://www.nvidia.com&lt;/a&gt;&lt;/p&gt;</content><category term="sponsors"/></entry><entry><title>Meet Our Sponsor - Nym</title><link href="https://pycon.org.il/2025/meet-our-sponsor-nym.html" rel="alternate"/><published>2025-08-21T10:05:00+03:00</published><updated>2025-08-21T10:05:00+03:00</updated><author><name>PyCon Israel Team</name></author><id>tag:pycon.org.il,2025-08-21:/2025/meet-our-sponsor-nym.html</id><summary type="html">&lt;p&gt;Meet our sponsor - Nym&lt;/p&gt;</summary><content type="html">&lt;p&gt;&lt;img alt="Image of Nym sponsor post" src="https://pycon.org.il/2025/images/sponsor-posts/nym.png" style="width: 50%; display: block; margin-left: auto; margin-right: auto;"&gt;&lt;/p&gt;
@@ -188,23 +211,4 @@ can't wait to see you there!&lt;/p&gt;</content><category term="announcements"/>
 &lt;a href="https://pycon.org.il/2025/he"&gt;pycon.org.il&lt;/a&gt; , בעמודים שלנו ברשתות
 החברתיות, או ב&lt;a href="https://lists.hamakor.org.il/postorius/lists/news.pycon.org.il/"&gt;רשימת
 התפוצה&lt;/a&gt;.
-נשמח לראות אתכן ואתכם שם!&lt;/p&gt;</content><category term="announcements"/></entry><entry><title>PyCon Israel 2024 Videos Published</title><link href="https://pycon.org.il/2025/videos-published.html" rel="alternate"/><published>2024-11-05T13:45:00+02:00</published><updated>2024-11-05T13:45:00+02:00</updated><author><name>PyCon Israel Team</name></author><id>tag:pycon.org.il,2024-11-05:/2025/videos-published.html</id><summary type="html">&lt;p&gt;The PyCon Israel 2024 videos are out&lt;/p&gt;</summary><content type="html">&lt;p&gt;PyCon Israel 2024 is proud to announce that the videos recorded at the
-day of talks are finally available. It took a bit longer than we
-expected (and we take the full responsibility for that), but they're
-finally out.&lt;/p&gt;
-&lt;p&gt;Go catch up on whatever you missed -- there are
-&lt;a href="https://www.youtube.com/@PyConIsrael/playlists"&gt;playlists&lt;/a&gt; for the
-whole day as well as per hall.&lt;/p&gt;
-&lt;p&gt;The &lt;a href="https://photos.app.goo.gl/VenoW9pJSqWaXGvv9"&gt;photos&lt;/a&gt; from that
-day, as well as &lt;a href="https://photos.app.goo.gl/xBMKNEnpUe4tfK7K8"&gt;those from the workshops
-day&lt;/a&gt;, had already been
-published.&lt;/p&gt;
-&lt;p&gt;Thanks to everyone who made this happen!&lt;/p&gt;</content><category term="announcements"/></entry><entry><title>הקלטות הוידאו של פייקון ישראל 2024 פורסמו</title><link href="https://pycon.org.il/2025/he/videos-published.html" rel="alternate"/><published>2024-11-05T13:45:00+02:00</published><updated>2024-11-05T13:45:00+02:00</updated><author><name>PyCon Israel Team</name></author><id>tag:pycon.org.il,2024-11-05:/2025/he/videos-published.html</id><summary type="html">&lt;p&gt;הקלטות הוידאו של פייקון ישראל 2024 פורסמו&lt;/p&gt;</summary><content type="html">&lt;p&gt;אנו בפייקון ישראל גאות וגאים להודיע כי הקלטות הוידאו מהכנס פורסמו. זה
-לקח יותר זמן משציפינו (וזה קרה בגללנו), אבל מה שחשוב זה שעכשיו הסרטונים זמינים.&lt;/p&gt;
-&lt;p&gt;אתן ואתם מוזמנים ומוזמנות להשלים כל מה שהחמצתן ופיספסתם; ישנם
-&lt;a href="https://www.youtube.com/@PyConIsrael/playlists"&gt;פלייליסטים&lt;/a&gt; של כל
-היום, וגם כאלה נפרדים לכל אולם.&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://photos.app.goo.gl/VenoW9pJSqWaXGvv9"&gt;התמונות&lt;/a&gt; מהיום הזה, כמו
-גם &lt;a href="https://photos.app.goo.gl/xBMKNEnpUe4tfK7K8"&gt;התמונות מיום
-הסדנאות&lt;/a&gt;, כבר פורסמו קודם לכן.&lt;/p&gt;
-&lt;p&gt;תודה לכל מי שתרמו לאירוע!&lt;/p&gt;</content><category term="announcements"/></entry></feed>
+נשמח לראות אתכן ואתכם שם!&lt;/p&gt;</content><category term="announcements"/></entry></feed>
